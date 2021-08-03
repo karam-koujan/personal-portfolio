@@ -1,0 +1,32 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:Rubik,sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+html{
+   --main-title :#ffffff;
+  --blue:#4b6cc1;
+  --nav-link:#ababab;
+  --primary:#191a1d;
+  --heading-color:#000000cc;
+  --text :#212121;
+  --light-grey:#d3d3d3;
+  scroll-behavior: smooth;
+  
+}
+a {
+  color: inherit;
+  cursor:pointer;
+  text-decoration: none;
+}
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+img{
+  height:auto;
+  width:100%;
+}
