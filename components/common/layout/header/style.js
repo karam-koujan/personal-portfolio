@@ -9,6 +9,17 @@ const Nav = styled.nav`
  display:flex;
  justify-content:space-between;
  padding:2.5rem 2rem;
+ animation-timing-function:ease-in-out;
+animation-name:fade-in;
+ animation-duration:.3s;
+  @keyframes fade-in{
+      0%{
+          transform :translateY(-100%);
+      }
+      100%{
+          transform:translateY(0%);
+      }
+  }
 `
 
 const NavLink = styled.a`
@@ -16,11 +27,13 @@ const NavLink = styled.a`
  font-size:.8rem;
  letter-spacing:2px;
  text-transform:uppercase;
+ 
 `
 const NavList = styled.ul`
 display:flex;
 justify-content:space-between;
 margin:0;
+
 `
 
 const NavItem = styled.li`

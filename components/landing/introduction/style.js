@@ -57,6 +57,17 @@ const Title = styled.h1`
 const Wrapper = styled.div`
  max-width:800px;
  width:100%;
+animation-timing-function:ease-in-out;
+animation-name:fade-out;
+ animation-duration:.3s;
+  @keyframes fade-out{
+      0%{
+          transform:translateY(30%);
+      }
+      100%{
+          transform:translateY(0%);
+      }
+  }
 `
 
 export {

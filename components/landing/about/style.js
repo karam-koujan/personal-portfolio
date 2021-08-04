@@ -15,6 +15,18 @@ const ImgWrapper = styled.div`
  & img{
      border-radius:3px;
  }
+animation-iteration-count:infinite;
+ animation-timing-function:ease-in-out;
+animation-name:o;
+ animation-duration:.5s;
+  @keyframes o{
+      0%{
+          transform :translateX(100%);
+      }
+      100%{
+          transform:translate(0%);
+      }
+  }
 `
 const TechList = styled.ul`
  background-color:var(--light-grey);

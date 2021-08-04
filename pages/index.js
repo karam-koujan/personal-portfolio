@@ -1,5 +1,5 @@
 
-import { About, Introduction, Projects } from "../components/landing"
+import { About ,Contact , Introduction, Projects } from "../components/landing"
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
      <Introduction/>
      <About/>
      <Projects/>
+     <Contact/>
     </>
   )
 }
