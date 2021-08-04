@@ -1,5 +1,6 @@
 import Link from "next/link"
-import {Bullet,ContactLink,Section,Text,Title,Wrapper} from "./style";
+import {Bullet,Title} from "../../../templates/"
+import {ContactLink,Section,Text,Wrapper} from "./style";
 
 
 const Contact = ()=>{

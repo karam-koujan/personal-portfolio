@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-const Bullet = styled.span`
- color:var(--blue);
- font-size:var(--size);
- margin-right:.5rem;
-`
+
 
 const Section = styled.section`
  padding:4rem 2rem;
@@ -15,18 +11,6 @@ const ImgWrapper = styled.div`
  & img{
      border-radius:3px;
  }
-animation-iteration-count:infinite;
- animation-timing-function:ease-in-out;
-animation-name:o;
- animation-duration:.5s;
-  @keyframes o{
-      0%{
-          transform :translateX(100%);
-      }
-      100%{
-          transform:translate(0%);
-      }
-  }
 `
 const TechList = styled.ul`
  background-color:var(--light-grey);
@@ -68,11 +52,7 @@ const TextWrapper = styled.div`
  self-align:center;
  width:50%;
 `
-const Title = styled.h2`
- color:var(--primary);
- font-size:3.4rem;
- text-transform:capitalize;
-`
+
 const Wrapper = styled.div`
  display:flex;
  justify-content:space-between;
@@ -80,14 +60,12 @@ const Wrapper = styled.div`
 
 
 export {
-    Bullet,
     Section,
     ImgWrapper,
     TechList,
     TechItem,
     Text,
     TextWrapper,
-    Title,
     Wrapper
 }
 

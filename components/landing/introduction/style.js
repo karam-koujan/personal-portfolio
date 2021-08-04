@@ -1,17 +1,11 @@
+import {Button} from "../../../templates";
 import styled from "styled-components";
 
 
-const GetInTouch = styled.a`
-  background-color:var(--blue);
-  border:none;
-  border-radius:1000px;
-  color: white;
-  display:inline-block;
-  font-size:1.4rem;
-  padding:1.5rem 2.3rem;
-  text-transform:capitalize;
+const GetInTouch = styled(Button)`
+  max-width:210px;
   transition:background-color .2s ease-in-out , transform .2s ease-in-out;
-
+  width:90%;
   &:hover,&:focus{
       background-color:transparent;
       border:2px solid var(--blue);

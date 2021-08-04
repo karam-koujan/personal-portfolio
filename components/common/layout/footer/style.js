@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import {Button} from "../../../../templates/"
 
 const Footer = styled.footer`
  background-color:var(--primary);
@@ -22,17 +22,12 @@ const Footer = styled.footer`
     width:100%;
    }
 `
-const ContactLink = styled.a`
+const ContactLink = styled(Button)`
 background-color:var(--blue);
 border:none;
-border-radius:1000px;
-color: white;
-display:inline-block;
-font-size:1.4rem;
-padding:1.5rem 2.3rem;
-text-transform:capitalize;
+max-width:210px;
+width:90%;
 transition:background-color .2s ease-in-out , transform .2s ease-in-out;
-
 &:hover,&:focus{
     background-color:transparent;
     border:2px solid var(--blue);

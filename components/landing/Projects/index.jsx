@@ -1,6 +1,7 @@
 import bruno from "../../../assets/images/bruno.jpg"
 import Image from "next/image";
-import {Bullet,Project,ProjectImg,ProjectTitle,Section,Text,Title,Wrapper} from "./style";
+import { Bullet,Title } from "../../../templates";
+import {Project,ProjectImg,ProjectTitle,Section,Text,Wrapper} from "./style";
 
 
 const Projects = ()=>{

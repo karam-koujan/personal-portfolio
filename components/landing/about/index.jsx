@@ -1,6 +1,7 @@
 import bruno from "../../../assets/images/bruno.jpg";
 import Image from "next/image";
-import {Bullet,Section,ImgWrapper,TechList,TechItem,Text,TextWrapper,Title,Wrapper} from "./style";
+import {Bullet,Title} from "../../../templates/";
+import {Section,ImgWrapper,TechList,TechItem,Text,TextWrapper,Wrapper} from "./style";
 
 const About = ()=>{
     return(
