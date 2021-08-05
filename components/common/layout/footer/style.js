@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button} from "../../../../templates/"
+import {Button} from "../../../../templates/";
 
 const Footer = styled.footer`
  background-color:var(--primary);
@@ -34,6 +34,13 @@ transition:background-color .2s ease-in-out , transform .2s ease-in-out;
     transform:scale(1.1);
 }
 `
+const Icon = styled.span`
+  width:25px;
+
+  & svg{
+      fill:#4b6cc1;
+  }
+`
 const SocialMediaList = styled.ul`
  padding:0;
  margin:4rem 0 0 0;
@@ -41,8 +48,8 @@ const SocialMediaList = styled.ul`
 const SocialMediaLink = styled.a`
  color:var(--nav-link);
  font-size:1.15rem;
- font-weight:500;
- letter-spacing:.5px;
+ font-weight:400;
+ letter-spacing:1px;
  margin-left:.5rem;
  text-transform :uppercase;
  transition:color .5s ease-in-out;
@@ -70,6 +77,7 @@ const Wrapper = styled.div`
 export{
     ContactLink,
     Footer,
+    Icon,
     SocialMediaList,
     SocialMediaLink,
     SocialMediaItem,

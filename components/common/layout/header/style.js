@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Fall } from "../../../../styles/animation";
 
 
 const Header = styled.header`
@@ -10,16 +11,9 @@ const Nav = styled.nav`
  justify-content:space-between;
  padding:2.5rem 2rem;
  animation-timing-function:ease-in-out;
-animation-name:fade-in;
+ animation-name:${Fall};
  animation-duration:.3s;
-  @keyframes fade-in{
-      0%{
-          transform :translateY(-100%);
-      }
-      100%{
-          transform:translateY(0%);
-      }
-  }
+ 
 `
 
 const NavLink = styled.a`

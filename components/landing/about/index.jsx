@@ -1,11 +1,14 @@
+import { useEffect,useRef } from "react";
 import bruno from "../../../assets/images/bruno.jpg";
 import Image from "next/image";
+import {onIntersectionAnimation} from "../../../lib/onIntersectionAnimation";
 import {Bullet,Title} from "../../../templates/";
 import {Section,ImgWrapper,TechList,TechItem,Text,TextWrapper,Wrapper} from "./style";
 
 const About = ()=>{
+    
     return(
-       <Section id="about">
+       <Section id="about" >
            <Title>About Me<Bullet style={{'--size':'4.5rem'}}>.</Bullet>
 
            </Title>
