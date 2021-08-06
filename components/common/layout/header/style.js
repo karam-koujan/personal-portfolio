@@ -1,7 +1,13 @@
 import styled from "styled-components";
+import {devices} from "../../../../styles/media";
 import { Fall } from "../../../../styles/animation";
 
-
+const Hamburger = styled.div`
+display:none;
+@media(${devices.medium}){
+    display:block;
+}
+`
 const Header = styled.header`
  background-color:var(--primary);
 `
@@ -27,7 +33,9 @@ const NavList = styled.ul`
 display:flex;
 justify-content:space-between;
 margin:0;
-
+ @media(${devices.medium}){
+     display:none;
+ }
 `
 
 const NavItem = styled.li`
@@ -56,6 +64,7 @@ const NavItem = styled.li`
 
 
 export{
+    Hamburger,
     Header,
     Nav,
     NavLink,

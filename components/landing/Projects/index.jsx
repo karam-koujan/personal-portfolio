@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Bullet,Title } from "../../../templates";
 import {Project,ProjectImg,ProjectTitle,Section,Text,Wrapper} from "./style";
 
-
+ 
 const Projects = ()=>{
  return(
      <Section id="projects">

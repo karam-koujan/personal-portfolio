@@ -1,12 +1,16 @@
 import Link from "next/link";
-import { Header as Wrapper,Nav,NavLink,NavList,NavItem} from "./style";
+import Image from "next/image";
+import hamburger from "../../../../assets/icons/hamburger.svg";
+import { Header as Wrapper,Nav,NavLink,NavList,NavItem, Hamburger} from "./style";
 
 const Header = ()=>{
  return(
      <Wrapper >
      <Nav>
          <span>Logo</span>
-
+      <Hamburger>
+          <Image src={hamburger} height={26} width={26}/>
+          </Hamburger> 
          <NavList>
               <NavItem>
                   <Link href="#home">

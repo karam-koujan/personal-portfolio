@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import {Button} from "../../../../templates/";
-
+import {devices} from "../../../../styles/media";
 const Footer = styled.footer`
  background-color:var(--primary);
  bottom:0;
- flex-wrap:wrap;
  display:flex;
  justify-content:space-around;
  padding:10rem 10rem 5rem 3rem; 
@@ -21,6 +20,11 @@ const Footer = styled.footer`
     position:absolute;
     width:100%;
    }
+ @media(${devices.medium}){
+    justify-content:space-between;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+ }
 `
 const ContactLink = styled(Button)`
 background-color:var(--blue);

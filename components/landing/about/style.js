@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import {devices} from "../../../styles/media";
 
 
 const Section = styled.section`
@@ -7,22 +7,25 @@ const Section = styled.section`
 `
 const ImgWrapper = styled.div`
  max-width:300px;
- width:70%;
+ width:100%;
  & img{
      border-radius:3px;
  }
+ @media(${devices.medium}){
+   margin:0 auto;
+}
 `
 const TechList = styled.ul`
  background-color:var(--light-grey);
  display:grid;
  grid-column-gap:4rem;
  grid-row-gap:1rem;
- grid-template-columns: auto auto auto ;
+ grid-template-columns:  auto auto  auto;
  margin:3rem 0;
  max-width:480px;
  padding:1rem 2rem;
  position:relative;
- width:70%;
+ width:100%;
  &::before{
      background-color:var(--blue);
      content:"";
@@ -33,6 +36,9 @@ const TechList = styled.ul`
      transform:translateY(-50%);
      width:2px;
  }
+ @media(${devices.medium}){
+    max-width:100%;
+   
 `
 const TechItem = styled.li`
  grid-columns:1/3;
@@ -51,14 +57,22 @@ const Text = styled.p`
 const TextWrapper = styled.div` 
  self-align:center;
  width:50%;
+ @media(${devices.medium}){
+    width:100%;
+}
 `
 
 const Wrapper = styled.div`
  display:flex;
+ flex-wrap:wrap;
  justify-content:space-between;
+
+ @media(${devices.medium}){
+     display:block;
+ }
 `
 
-
+ 
 export {
     Section,
     ImgWrapper,

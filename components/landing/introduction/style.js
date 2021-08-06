@@ -1,7 +1,8 @@
 import {Button} from "../../../templates";
 import {Climb} from "../../../styles/animation.js";
+import {devices} from "../../../styles/media";
 import styled from "styled-components";
-
+ 
 
 const GetInTouch = styled(Button)`
   max-width:210px;
@@ -52,10 +53,12 @@ const Title = styled.h1`
 const Wrapper = styled.div`
  max-width:800px;
  width:100%;
-animation-timing-function:ease-in-out;
-animation-name:${Climb};
+ animation-timing-function:ease-in-out;
+ animation-name:${Climb};
  animation-duration:.3s;
-  
+ @media(${devices.medium}){
+   padding:0 0 0 2rem;
+ } 
 `
 
 export {
