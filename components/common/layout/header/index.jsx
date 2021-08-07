@@ -76,7 +76,7 @@ const Header = ()=>{
                   </Link>
               </NavItem>
               <NavItem>
-                  <Link href="#contacts">
+                  <Link href="/contact">
                       <NavLink>
                           Contacts
                       </NavLink>
