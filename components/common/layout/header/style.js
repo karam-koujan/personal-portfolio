@@ -10,15 +10,77 @@ display:none;
 `
 const Header = styled.header`
  background-color:var(--primary);
+ transition:background-color .5s .5s ease-out;
+ width:100%;
+ ${({showNavBar})=>showNavBar?`
+ background-color:white;
+ position:fixed;
+ transition:background-color .5s ease-out !important;
+ z-index:1;
+ `:null}
+
+`
+
+const MobileNavLink = styled.a`
+ color:#5E5E5E;
+ transition:color .2s ease-in-out;
+ &:hover,&:focus{
+     color:var(--primary);
+ }
+`
+const MobileNavList = styled.ul`
+background-color:white;
+bottom:0%;
+display:none;
+height:0vh;
+left:0%;
+overflow:auto;
+padding:0rem 0 0 2rem;
+position:fixed;
+top:5rem;
+transition :height .5s  ease-out  ;
+width:100%;
+z-index:1;
+${({showNavBar})=>showNavBar?`
+height:100vh;
+ transition :height .3s 1s ease-out !important;
+}`:null}
+
+@media(${devices.medium}){
+  display:block;
+}
+ ::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+`
+const MobileNavItem = styled.li`
+ border-bottom:1px solid var(--nav-link);
+ font-size:1.37rem;
+ list-style :none;
+ margin-bottom:2rem;
+ padding:0 0 1rem 0;
 `
 
 const Nav = styled.nav`
+ animation-timing-function:ease-out;
+ animation-name:${Fall};
+ animation-duration:.3s;
  display:flex;
  justify-content:space-between;
  padding:2.5rem 2rem;
- animation-timing-function:ease-in-out;
- animation-name:${Fall};
- animation-duration:.3s;
  
 `
 
@@ -37,7 +99,6 @@ margin:0;
      display:none;
  }
 `
-
 const NavItem = styled.li`
  list-style :none;
  margin:0 2rem;
@@ -66,6 +127,9 @@ const NavItem = styled.li`
 export{
     Hamburger,
     Header,
+    MobileNavLink,
+    MobileNavList,
+    MobileNavItem,
     Nav,
     NavLink,
     NavList,
