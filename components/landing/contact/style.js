@@ -1,4 +1,5 @@
 import {Button} from "../../../templates"
+import {devices} from "../../../styles/media"
 import styled from "styled-components";
 
 
@@ -20,6 +21,9 @@ const Section = styled.section`
  flex-direction:column;
  justify-content:center;
  padding:0 0 8rem 0;
+ @media(${devices.small}){
+  padding-top:0rem;
+ }
 `
 
 const Text = styled.p`

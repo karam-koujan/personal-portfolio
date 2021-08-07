@@ -1,12 +1,14 @@
 import styled from "styled-components";
-
+import {devices} from "../../../styles/media";
 
 const Project = styled.div`
  background-color:var(--white);
  box-shadow:0px 1px 5px 0px rgba(0,0,0,.5) , 0px 0px 0px 0px rgba(0,0,0,.5);
  color:var(--primary);
  max-width:300px;
- width:100%;
+ @media(${devices.small}){
+     max-width:100%;
+   }
 `
 const ProjectImg = styled.div`
  cursor:pointer;
@@ -26,6 +28,10 @@ const ProjectTitle = styled.h3`
 `
 const Section = styled.section`
  padding:4rem 2rem;
+
+ @media(${devices.small}){
+    padding-top:0rem;
+   }
 `
 
 const Text = styled.p`
@@ -38,6 +44,7 @@ const Wrapper = styled.div`
  flex-wrap:wrap;
  padding:4rem 0;
  gap:4rem;
+
 `
 
 export {

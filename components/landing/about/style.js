@@ -4,6 +4,9 @@ import {devices} from "../../../styles/media";
 
 const Section = styled.section`
  padding:4rem 2rem;
+ @media(${devices.small}){
+    padding-top:0rem;
+   }
 `
 const ImgWrapper = styled.div`
  max-width:300px;

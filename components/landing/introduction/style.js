@@ -21,6 +21,7 @@ const Section = styled.section`
  justify-content:center;
  height:500px;
  padding: 5rem  2rem 0 0 ;
+
  position:relative;
  &::before{
    background-color:transparent;
@@ -34,6 +35,9 @@ const Section = styled.section`
    position:absolute;
    width:100%;
   }
+  @media(${devices.small}){
+    padding-top:0rem;
+   }
 `
 
 const Text = styled.p`
@@ -53,7 +57,7 @@ const Title = styled.h1`
 const Wrapper = styled.div`
  max-width:800px;
  width:100%;
- animation-timing-function:ease-in-out;
+ animation-timing-function:ease-out;
  animation-name:${Climb};
  animation-duration:.3s;
  @media(${devices.medium}){
