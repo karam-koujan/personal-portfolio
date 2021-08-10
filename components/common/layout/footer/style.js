@@ -13,12 +13,13 @@ const Footer = styled.footer`
     background-color:transparent;
     border-bottom:0px solid white;
     border-left:1400px solid transparent;
-    border-top:70px solid white;
-    border-right:0px solid white;
-    top:0; 
+    border-top:80px solid white;
+    border-right:0 solid white;
     content:"";   
     height:40px;
+    left:-1%;
     position:absolute;
+    top:-1px; 
     width:100%;
    }
  @media(${devices.medium}){

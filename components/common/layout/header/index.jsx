@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import hamburger from "../../../../assets/icons/hamburger.svg";
-import { Header as Wrapper,Hamburger,MobileNavLink,MobileNavList,MobileNavItem,Nav,NavLink,NavList,NavItem} from "./style";
+//import hamburger from "../../../../assets/icons/hamburger.svg";
+import Hamburger from "../../hamburger";
+import { Header as Wrapper,MobileNavLink,MobileNavList,MobileNavItem,Nav,NavLink,NavList,NavItem} from "./style";
 
 const Header = ()=>{
     const [showNavBar,setShowNavBar] = useState(false);
@@ -11,9 +12,7 @@ const Header = ()=>{
      <Wrapper showNavBar={showNavBar} >
      <Nav showNavBar={showNavBar}>
          <span>Logo</span>
-      <Hamburger onClick={_=>setShowNavBar(!showNavBar)}>
-          <Image src={hamburger} height={26} width={26}/>
-          </Hamburger> 
+      <Hamburger showNavBar={showNavBar} handleShowNavBar={_=>setShowNavBar(!showNavBar)} />
 
           <MobileNavList showNavBar={showNavBar}>
               <MobileNavItem>

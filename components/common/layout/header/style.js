@@ -10,6 +10,7 @@ display:none;
 `
 const Header = styled.header`
  background-color:var(--primary);
+ padding:0 0 1rem 0;
  transition:background-color .5s .5s ease-out;
  width:100%;
  ${({showNavBar})=>showNavBar?`
@@ -18,7 +19,8 @@ const Header = styled.header`
  transition:background-color .5s ease-out !important;
  z-index:1;
  `:null}
-
+ @media(${devices.medium}){
+   }
 `
 
 const MobileNavLink = styled.a`

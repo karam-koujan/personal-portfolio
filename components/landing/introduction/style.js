@@ -20,20 +20,20 @@ const Section = styled.section`
  display:flex;
  justify-content:center;
  height:500px;
- padding: 5rem  2rem 0 0 ;
+ padding: 5rem  2rem 0 2rem ;
 
  position:relative;
  &::before{
-   background-color:transparent;
-   border-top:0px solid white;
-   border-left:1400px solid transparent;
-   border-bottom:70px solid white;
-   border-right:0px solid white;
-   bottom:0; 
-   content:"";   
-   height:40px;
-   position:absolute;
-   width:100%;
+  background-color:transparent;
+  border-top:0px solid white;
+  border-left:1400px solid transparent;
+  border-bottom:70px solid white;
+  border-right:0px solid white;
+  bottom:-1px; 
+  content:"";   
+  height:40px;
+  position:absolute;
+  width:100%;
   }
   @media(${devices.small}){
     padding-top:0rem;
