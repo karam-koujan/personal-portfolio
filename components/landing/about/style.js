@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled,{css} from "styled-components";
 import {devices} from "../../../styles/media";
-
+import { fadeIn } from "../../../styles/animation";
 
 const Section = styled.section`
  padding:4rem 2rem;
@@ -10,7 +10,12 @@ const Section = styled.section`
 `
 const ImgWrapper = styled.div`
  max-width:300px;
+ transform :translateX(1000%);
  width:100%;
+ ${({isVisible})=>isVisible?`
+  transition:transform .8s 1.4s ease-in-out;
+  transform:translateX(0%);
+  `:null}
  & img{
      border-radius:3px;
  }
@@ -21,9 +26,9 @@ const ImgWrapper = styled.div`
 const TechList = styled.ul`
  background-color:var(--light-grey);
  display:grid;
- grid-column-gap:4rem;
+ grid-column-gap:10%;
  grid-row-gap:1rem;
- grid-template-columns:  auto auto  auto;
+ grid-template-columns:  repeat(3,1fr);
  margin:3rem 0;
  max-width:480px;
  padding:1rem 2rem;
@@ -41,7 +46,8 @@ const TechList = styled.ul`
  }
  @media(${devices.medium}){
     max-width:100%;
-   
+  @media(${devices.small}){
+} 
 `
 const TechItem = styled.li`
  grid-columns:1/3;
@@ -60,6 +66,14 @@ const Text = styled.p`
 const TextWrapper = styled.div` 
  self-align:center;
  width:50%;
+ opacity:0;
+ transform :translateY(50%);
+ ${({isVisible})=>isVisible?`
+ transition :opacity .2s 1s ease-out , transform .4s 1s ease-out;
+   opacity:1; 
+   transform:translateY(0);
+  `
+   :null}
  @media(${devices.medium}){
     width:100%;
 }

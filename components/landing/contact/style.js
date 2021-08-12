@@ -21,6 +21,7 @@ const Section = styled.section`
  flex-direction:column;
  justify-content:center;
  padding:0 0 8rem 0;
+ 
  @media(${devices.small}){
   padding-top:0rem;
  }
@@ -30,10 +31,18 @@ const Text = styled.p`
  color:var(--primary);
  line-height:25px;
  text-align:center;
+
 `
  
 const Wrapper = styled.div`
  max-width:600px;
+ opacity:0;
+ transform :scale(0);
+ ${({isVisible})=>isVisible?`
+ opacity:1;
+ transform :scale(1);
+ transition:all .5s .5s ease;
+ `:null}
  width:90%;
 `
 

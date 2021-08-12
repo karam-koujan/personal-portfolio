@@ -5,7 +5,7 @@ const Introduction = ()=>{
   return(
       <Section>
         <Wrapper>
-          <Title>
+          <Title style={{"--typeWriterChar":"14"}}>
           Hey, I’m Seb.
           </Title>
           <Text>

@@ -1,5 +1,5 @@
 import {Button} from "../../../templates";
-import {Climb} from "../../../styles/animation.js";
+import {blink,Climb,fadeInUp,typeWriter} from "../../../styles/animation.js";
 import {devices} from "../../../styles/media";
 import styled from "styled-components";
  
@@ -46,12 +46,19 @@ const Text = styled.p`
  font-size:1.12rem;
  line-height:35px;
  margin:2rem 0;
+ 
+ 
 `
 const Title = styled.h1`
   color:var(--main-title);
   font-size:4rem;
   font-weight:400;
+  letter-spacing:4px;
   margin:0;
+  width:max-content;
+  position:relative;
+
+ 
 `
 
 const Wrapper = styled.div`

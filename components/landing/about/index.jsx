@@ -1,19 +1,18 @@
-import { useEffect,useRef } from "react";
 import bruno from "../../../assets/images/bruno.jpg";
 import Image from "next/image";
-import {onIntersectionAnimation} from "../../../lib/onIntersectionAnimation";
+import { useOnScreen } from "../../../hooks";
 import {Bullet,Title} from "../../../templates/";
 import {Section,ImgWrapper,TechList,TechItem,Text,TextWrapper,Wrapper} from "./style";
 
 const About = ()=>{
-    
-    return(
-       <Section id="about" >
-           <Title>About Me<Bullet style={{'--size':'4.5rem'}}>.</Bullet>
+  const [isVisible,ref] = useOnScreen({rootMargin:'-40px 0px 0px 0px',threshold:0}) 
+      return(
+       <Section id="about"  ref={ref}  >
+           <Title isVisible={isVisible}>About Me<Bullet style={{'--size':'4.5rem'}} >.</Bullet>
 
            </Title>
           <Wrapper>
-              <TextWrapper>
+              <TextWrapper isVisible={isVisible}>
               <Text>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima enim esse dolores optio temporibus placeat mollitia reiciendis, doloremque, fuga repudiandae libero eum non nulla nisi aperiam nostrum sed cumque adipisci!
               </Text>
@@ -39,7 +38,7 @@ const About = ()=>{
                       Node</TechItem>
               </TechList>
               </TextWrapper>
-              <ImgWrapper>
+              <ImgWrapper isVisible={isVisible}>
                <Image src={bruno} layout="responsive" />
               </ImgWrapper>
           </Wrapper>           

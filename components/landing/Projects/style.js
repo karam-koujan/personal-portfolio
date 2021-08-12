@@ -44,6 +44,11 @@ const Wrapper = styled.div`
  flex-wrap:wrap;
  padding:4rem 0;
  gap:4rem;
+ opacity:0;
+ ${({isVisible})=>isVisible?`
+ transition:all .5s 1s  ease;
+  opacity:1;
+ `:null}
 
 `
 
