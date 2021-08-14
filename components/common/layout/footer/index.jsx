@@ -9,7 +9,7 @@ const Footer = ()=>{
        <Wrapper> 
            <Title>Let's Work Together</Title>
            <Link href="/contact">
-           <ContactLink>
+           <ContactLink tabIndex="0">
                 Get In Touch   
             </ContactLink>           
            </Link>

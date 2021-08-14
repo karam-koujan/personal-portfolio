@@ -11,7 +11,7 @@ display:none;
 const Header = styled.header`
  background-color:var(--primary);
  padding:0 0 1rem 0;
- transition:background-color .5s .5s ease-out;
+ transition:background-color .5s .5s ease;
  width:100%;
  ${({showNavBar})=>showNavBar?`
  background-color:white;
@@ -119,7 +119,7 @@ const NavItem = styled.li`
      transition:width .5s ease-in-out;
      width:0%;
  }
- &:hover::before, &:hover::after{
+ &:hover::before, &:focus::after{
      width:100%;
  }
 `

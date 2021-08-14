@@ -1,18 +1,18 @@
 import Link from "next/link";
 import {GetInTouch,Section,Text,Title, Wrapper} from "./style";
 
-const Introduction = ()=>{
+const Introduction = ({data:{name,introduction}})=>{
   return(
       <Section>
         <Wrapper>
           <Title style={{"--typeWriterChar":"14"}}>
-          Hey, I’m Seb.
+          Hey, I’m {name}
           </Title>
           <Text>
-          A web designer and developer from Southampton in the UK. I create bespoke websites to help people go further online.
+            {introduction}
           </Text>
-          <Link href="/contact">
-            <GetInTouch>
+          <Link href="/contact" >
+            <GetInTouch tabIndex="0">
               get in touch
             </GetInTouch>
           </Link>

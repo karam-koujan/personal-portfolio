@@ -2,10 +2,10 @@ import Footer from "./footer";
 import Header from "./header";
 
 
-const Layout = ({children})=>{
+const Layout = ({children,data})=>{
   return(
       <>
-       <Header/>
+       <Header data={data}/>
        {children}
        <Footer/>
       </>

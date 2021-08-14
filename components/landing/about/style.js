@@ -1,6 +1,6 @@
 import styled,{css} from "styled-components";
 import {devices} from "../../../styles/media";
-import { fadeIn } from "../../../styles/animation";
+import { fadeIn ,slideX} from "../../../styles/animation";
 
 const Section = styled.section`
  padding:4rem 2rem;
@@ -12,9 +12,12 @@ const ImgWrapper = styled.div`
  max-width:300px;
  transform :translateX(1000%);
  width:100%;
- ${({isVisible})=>isVisible?`
-  transition:transform .8s 1.4s ease-in-out;
-  transform:translateX(0%);
+ ${({isVisible})=>isVisible?css`
+   animation-delay:1.6s;
+   animation-duration:.6s;
+   animation-fill-mode:forwards;
+   animation-name:${slideX};
+   animation-timing-function:ease;
   `:null}
  & img{
      border-radius:3px;
@@ -28,7 +31,7 @@ const TechList = styled.ul`
  display:grid;
  grid-column-gap:10%;
  grid-row-gap:1rem;
- grid-template-columns:  repeat(3,1fr);
+ grid-template-columns:  repeat(3,4fr);
  margin:3rem 0;
  max-width:480px;
  padding:1rem 2rem;

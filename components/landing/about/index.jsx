@@ -4,42 +4,29 @@ import { useOnScreen } from "../../../hooks";
 import {Bullet,Title} from "../../../templates/";
 import {Section,ImgWrapper,TechList,TechItem,Text,TextWrapper,Wrapper} from "./style";
 
-const About = ()=>{
-  const [isVisible,ref] = useOnScreen({rootMargin:'-40px 0px 0px 0px',threshold:0}) 
+const About = ({data:{text,skills}})=>{
+  const [isVisible,ref] = useOnScreen({rootMargin:'0px 0px 0px 0px',threshold:0.1}) 
       return(
-       <Section id="about"  ref={ref}  >
+       <Section id="about"  ref={ref} tabIndex="0"  >
            <Title isVisible={isVisible}>About Me<Bullet style={{'--size':'4.5rem'}} >.</Bullet>
 
            </Title>
-          <Wrapper>
+          <Wrapper >
               <TextWrapper isVisible={isVisible}>
               <Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima enim esse dolores optio temporibus placeat mollitia reiciendis, doloremque, fuga repudiandae libero eum non nulla nisi aperiam nostrum sed cumque adipisci!
+       {text}
               </Text>
               <TechList>
-                  <TechItem>
+                  {skills.map((skill,idx)=>(
+                  <TechItem key={idx}>
                       <Bullet style={{'--size':'.7rem'}}>&#9632;</Bullet>
-                      React
+                      {skill}
                       </TechItem>
-                  <TechItem>
-                  <Bullet style={{'--size':'.7rem'}}>&#9632;</Bullet>
-                      HTML/CSS/JS</TechItem>
-                  <TechItem>
-                  <Bullet style={{'--size':'.7rem'}}>&#9632;</Bullet>
-                      Next</TechItem>
-                  <TechItem>
-                  <Bullet  style={{'--size':'.7rem'}}>&#9632;</Bullet>
-                      Node</TechItem>
-                      <TechItem>
-                  <Bullet  style={{'--size':'.7rem'}}>&#9632;</Bullet>
-                      Node</TechItem>
-                      <TechItem>
-                  <Bullet  style={{'--size':'.7rem'}}>&#9632;</Bullet>
-                      Node</TechItem>
+                  ))}
               </TechList>
               </TextWrapper>
               <ImgWrapper isVisible={isVisible}>
-               <Image src={bruno} layout="responsive" />
+               <Image src={bruno} layout="responsive" placeholder="blur" />
               </ImgWrapper>
           </Wrapper>           
        </Section>

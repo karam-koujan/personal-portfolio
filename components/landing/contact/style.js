@@ -1,6 +1,7 @@
 import {Button} from "../../../templates"
 import {devices} from "../../../styles/media"
-import styled from "styled-components";
+import {scale} from "../../../styles/animation";
+import styled,{css} from "styled-components";
 
 
 const ContactLink = styled(Button)`
@@ -38,13 +39,18 @@ const Wrapper = styled.div`
  max-width:600px;
  opacity:0;
  transform :scale(0);
- ${({isVisible})=>isVisible?`
- opacity:1;
- transform :scale(1);
- transition:all .5s .5s ease;
+ ${({isVisible})=>isVisible?css`
+ animation-name:${scale};
+ animation-duration:.6s;
+ animation-delay:.5s;
+ animation-timing-function:ease;
+ animation-fill-mode:forwards;
  `:null}
  width:90%;
 `
+/*
+
+*/
 
 export {
     ContactLink,

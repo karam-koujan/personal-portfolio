@@ -53,10 +53,10 @@ const Title = styled.h1`
   color:var(--main-title);
   font-size:4rem;
   font-weight:400;
-  letter-spacing:4px;
   margin:0;
   width:max-content;
   position:relative;
+  text-transform:capitalize;
 
  
 `

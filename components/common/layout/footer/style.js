@@ -23,9 +23,7 @@ const Footer = styled.footer`
     width:100%;
    }
  @media(${devices.medium}){
-    justify-content:space-between;
-    padding-left:1.5rem;
-    padding-right:1.5rem;
+   justify-content:center;   
  }
  @media(${devices.small}){
     padding-top:2rem;
@@ -42,7 +40,7 @@ transition:background-color .2s ease-in-out , transform .2s ease-in-out;
     border:2px solid var(--blue);
     transform:scale(1.1);
 }
-@media(${devices.small}){
+@media(${devices.medium}){
     margin:0 auto;
    }
 `
@@ -72,6 +70,8 @@ const SocialMediaLink = styled.a`
  &:hover,&:focus{
      color:white;
  }
+ 
+ 
 `
 const SocialMediaItem = styled.li`
  align-items:center;
@@ -83,12 +83,15 @@ const Title = styled.h2`
  color:white;
  font-size:3rem;
  font-weight:normal;
- @media(${devices.small}){
+ @media(${devices.medium}){
  text-align:center;  
 }
 `
 const Wrapper = styled.div`
  height:100%;
+ @media(${devices.medium}){
+   margin:0 auto;
+ }
 `
 
 

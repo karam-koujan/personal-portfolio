@@ -1,3 +1,4 @@
+import Link from "next/link";
 import bruno from "../../../assets/images/bruno.jpg"
 import Image from "next/image";
 import {useOnScreen} from "../../../hooks/"
@@ -5,37 +6,28 @@ import { Bullet,Title } from "../../../templates";
 import {Project,ProjectImg,ProjectTitle,Section,Text,Wrapper} from "./style";
  
  
-const Projects = ()=>{
-    const [isVisible,ref] = useOnScreen({rootMargin:'0px',threshold:0}) 
+const Projects = ({data})=>{
+    const [isVisible,ref] = useOnScreen({rootMargin:'0px 0px -40px 0px',threshold:0.2}) 
  return(
-     <Section id="projects" ref={ref}>
+     <Section id="projects" ref={ref} tabIndex="0" >
          <Title isVisible={isVisible}>
              Experemental Projects<Bullet style={{'--size':'4.5rem'}}>.</Bullet>
          </Title>
          <Wrapper isVisible={isVisible}>
-             <Project>
-                 <ProjectTitle>Instegam clone</ProjectTitle>
+             {data.map(({title,text,image,github,link},idx)=>(
+                 <Project key={idx}  tabIndex="0">
+                     <Link href={link}>
+                 <a>
+                 <ProjectTitle>{title}</ProjectTitle>
                  <ProjectImg>
-                     <Image src={bruno} layout="responsive" height={400}/>
+                     <Image src={bruno} layout="responsive" height={400} placeholder="blur" />
                  </ProjectImg>
-                 <Text>estiae obcaecati, necessitatibus deserunt? Quod, tempora!</Text>
+                 <Text>{text}</Text>
+                 </a>
+                 </Link>
              </Project>
+             ))}
 
-             <Project>
-                 <ProjectTitle>Instegam clone</ProjectTitle>
-                 <ProjectImg>
-                     <Image src={bruno} layout="responsive" height={400}/>
-                 </ProjectImg>
-                 <Text>estiae obcaecati, necessitatibus deserunt? Quod, tempora!</Text>
-             </Project>
-
-             <Project>
-                 <ProjectTitle>Instegam clone</ProjectTitle>
-                 <ProjectImg>
-                     <Image src={bruno} layout="responsive" height={400}/>
-                 </ProjectImg>
-                 <Text>estiae obcaecati, necessitatibus deserunt? Quod, tempora!</Text>
-             </Project>
            
          </Wrapper>
      </Section>

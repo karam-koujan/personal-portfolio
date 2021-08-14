@@ -5,7 +5,7 @@ import Image from "next/image";
 import Hamburger from "../../hamburger";
 import { Header as Wrapper,MobileNavLink,MobileNavList,MobileNavItem,Nav,NavLink,NavList,NavItem} from "./style";
 
-const Header = ()=>{
+const Header = ({data})=>{
     const [showNavBar,setShowNavBar] = useState(false);
     
  return(
@@ -13,74 +13,30 @@ const Header = ()=>{
      <Nav showNavBar={showNavBar}>
          <span>Logo</span>
       <Hamburger showNavBar={showNavBar} handleShowNavBar={_=>setShowNavBar(!showNavBar)} />
-
-          <MobileNavList showNavBar={showNavBar}>
-              <MobileNavItem>
+      <MobileNavList showNavBar={showNavBar}>
+      {data.map((navigationItem,idx)=>(
+              <MobileNavItem key={idx} tabIndex="0">
                   <Link href="#home">
                       <MobileNavLink>
-                          Hom
+                         {navigationItem}
                       </MobileNavLink>
                   </Link>
               </MobileNavItem>
-              <MobileNavItem>
-                  <Link href="#home">
-                      <MobileNavLink>
-                          Home
-                      </MobileNavLink>
-                  </Link>
-              </MobileNavItem>
-              <MobileNavItem>
-                  <Link href="#home">
-                      <MobileNavLink>
-                          Home
-                      </MobileNavLink>
-                  </Link>
-              </MobileNavItem>
-              <MobileNavItem>
-                  <Link href="#about">
-                      <MobileNavLink>
-                          About
-                      </MobileNavLink>
-                  </Link>
-              </MobileNavItem>
-              <MobileNavItem>
-                  <Link href="#home">
-                      <MobileNavLink>
-                          Home
-                      </MobileNavLink>
-                  </Link>
-              </MobileNavItem>
+      ))}
+              
           </MobileNavList>
           
          <NavList>
-              <NavItem>
-                  <Link href="#home">
+             {data.map((navigationItem,idx)=>(
+
+              <NavItem key={idx} tabIndex="0">
+                  <Link href={`#${navigationItem}`}>
                       <NavLink>
-                          Home
+                          {navigationItem}
                       </NavLink>
                   </Link>
               </NavItem>
-              <NavItem>
-                  <Link href="#about">
-                      <NavLink>
-                          About
-                      </NavLink>
-                  </Link>
-              </NavItem>
-              <NavItem>
-                  <Link href="#projects">
-                      <NavLink>
-                          Projects
-                      </NavLink>
-                  </Link>
-              </NavItem>
-              <NavItem>
-                  <Link href="/contact">
-                      <NavLink>
-                          Contacts
-                      </NavLink>
-                  </Link>
-              </NavItem>
+             ))}
          </NavList>
      </Nav>
 
