@@ -5,7 +5,7 @@ body {
   font-family:Rubik,sans-serif;
   overflow-x: hidden;
 }
-html{
+:root{
    --main-title :#ffffff;
   --blue:#4b6cc1;
   --nav-link:#ababab;
@@ -17,6 +17,8 @@ html{
   -webkit-scroll-behavior:smooth ;
   
 }
+
+
 a {
   color: inherit;
   cursor:pointer;

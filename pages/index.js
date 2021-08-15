@@ -6,7 +6,7 @@ export default function Home({about,contact,projects:{projects},introduction,nav
   
   return (
      <Layout data={navigation}>
-     <Introduction data={introduction}/>
+     <Introduction data={introduction} />
      <About data={about}/>
      <Projects data={projects}/>
      <Contact data={contact}/>

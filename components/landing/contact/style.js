@@ -7,7 +7,7 @@ import styled,{css} from "styled-components";
 const ContactLink = styled(Button)`
   border:2px solid white;
   margin:2rem auto;
-  max-width:305px;
+  max-width:320px;
   transition:background-color .3s linear;
   width:90%;
   &:hover,&:focus{

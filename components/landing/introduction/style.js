@@ -20,8 +20,8 @@ const Section = styled.section`
  display:flex;
  justify-content:center;
  height:500px;
- padding: 5rem  2rem 0 2rem ;
-
+ padding-block:min(5rem,10vw);
+ padding-top:0 2rem;
  position:relative;
  &::before{
   background-color:transparent;
@@ -36,7 +36,7 @@ const Section = styled.section`
   width:100%;
   }
   @media(${devices.small}){
-    padding-top:0rem;
+    padding-left:0rem;
    }
 `
 
@@ -51,10 +51,9 @@ const Text = styled.p`
 `
 const Title = styled.h1`
   color:var(--main-title);
-  font-size:4rem;
+  font-size:clamp(2.5rem,8vw,4rem);
   font-weight:400;
   margin:0;
-  width:max-content;
   position:relative;
   text-transform:capitalize;
 

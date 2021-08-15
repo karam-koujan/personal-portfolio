@@ -34,7 +34,25 @@ const Section = styled.section`
     padding-top:0rem;
    }
 `
+const TechList = styled.ul`
+align-items:center;
+display:flex;
+flex-wrap:wrap;
+gap:.5rem;
+ margin:0;
+ padding:1rem .5rem;
+`
+const TechItem = styled.li`
+ width:max-content;
+ background-color:var(--blue);
+ border-radius:2px;
+ color:white;
+ font-weight:100;
+ list-style:none;
+ margin:0;
+ padding:.2rem .7rem;  
 
+`
 const Text = styled.p`
  line-height:22px;
  margin: 1.5rem 2rem;
@@ -46,12 +64,13 @@ const Wrapper = styled.div`
  opacity:0;
  padding:4rem 0;
  gap:4rem;
- transform:translateY(2%);
+ transform:translateY(20%);
  ${({isVisible})=>isVisible?css`
  animation-delay:1s;
  animation-duration:.6s;
  animation-fill-mode:forwards;
- animation-name :${fadeInUp};   
+ animation-name :${fadeInUp}; 
+ animation-timing-function:ease;  
  `:null}
 
 `
@@ -61,6 +80,8 @@ export {
     ProjectImg,
     ProjectTitle,
     Section,
+    TechList,
+    TechItem,
     Text,
     Wrapper
 }

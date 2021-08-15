@@ -27,20 +27,19 @@ const ImgWrapper = styled.div`
 }
 `
 const TechList = styled.ul`
- background-color:var(--light-grey);
+ background-color:transparent;
  display:grid;
- grid-column-gap:10%;
- grid-row-gap:1rem;
- grid-template-columns:  repeat(3,4fr);
+ grid-gap:2rem 1rem;
+ grid-template-columns:repeat(3,1fr);
  margin:3rem 0;
- max-width:480px;
- padding:1rem 2rem;
+ max-width:700px;
+ padding:1rem 0 1rem 2.5rem; 
  position:relative;
  width:100%;
  &::before{
      background-color:var(--blue);
      content:"";
-     height:70%;
+     height:60%;
      position:absolute;
      left:0;
      top:50%;
@@ -49,15 +48,27 @@ const TechList = styled.ul`
  }
  @media(${devices.medium}){
     max-width:100%;
+    grid-gap-rows:1rem;
   @media(${devices.small}){
+     grid-template-columns:repeat(2,1fr);
+
 } 
 `
 const TechItem = styled.li`
- grid-columns:1/3;
+ align-self:center;
  color:var(--primary);
- display:flex;
+ font-weight:300;
  list-style:none;
- text-transform:capitalize;
+ position:relative;
+ &::before{
+   background-color:var(--blue);
+   content:"";
+   height:5px;
+   left:-7%;
+   position:absolute;
+   top:30%;
+   width:5px;
+ }
 `
 const Text = styled.p`
  color:var(--primary);

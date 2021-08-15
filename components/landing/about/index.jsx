@@ -19,7 +19,6 @@ const About = ({data:{text,skills}})=>{
               <TechList>
                   {skills.map((skill,idx)=>(
                   <TechItem key={idx}>
-                      <Bullet style={{'--size':'.7rem'}}>&#9632;</Bullet>
                       {skill}
                       </TechItem>
                   ))}

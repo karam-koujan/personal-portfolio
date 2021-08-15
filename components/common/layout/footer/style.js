@@ -5,9 +5,8 @@ const Footer = styled.footer`
  background-color:var(--primary);
  bottom:0;
  display:flex;
- flex-wrap:wrap;
  justify-content:space-around;
- padding:10rem 10rem 5rem 3rem; 
+ padding-block:min(7rem,30vh);
  position:relative;
  &::before{
     background-color:transparent;
@@ -22,11 +21,10 @@ const Footer = styled.footer`
     top:-1px; 
     width:100%;
    }
- @media(${devices.medium}){
-   justify-content:center;   
- }
+
  @media(${devices.small}){
-    padding-top:2rem;
+     align-items:center;
+     flex-direction:column;
    }
 `
 const ContactLink = styled(Button)`
@@ -54,9 +52,7 @@ const Icon = styled.span`
 const SocialMediaList = styled.ul`
  padding:0;
  margin:4rem 0 0 0;
- @media(${devices.small}){
-    margin:4rem auto 0 auto;
-   }
+ 
 `
 const SocialMediaLink = styled.a`
  color:var(--nav-link);
@@ -81,7 +77,7 @@ const SocialMediaItem = styled.li`
 `
 const Title = styled.h2`
  color:white;
- font-size:3rem;
+ font-size:clamp(2.3rem , 6vw , 3rem);
  font-weight:normal;
  @media(${devices.medium}){
  text-align:center;  
@@ -89,9 +85,7 @@ const Title = styled.h2`
 `
 const Wrapper = styled.div`
  height:100%;
- @media(${devices.medium}){
-   margin:0 auto;
- }
+
 `
 
 

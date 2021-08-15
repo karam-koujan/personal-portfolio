@@ -6,23 +6,26 @@ const Bullet = styled.span`
  color:var(--blue);
  font-size:var(--size);
  margin-right:.5rem;
+ @media(${devices.small}){
+     font-size:var(--small-size,2.5rem);
+ }
 `
 const Title = styled.h2`
 color:var(--primary);
-font-size:3.4rem;
+font-size:clamp(1.4rem,6vw,3.4rem);
 text-transform:capitalize;
 transform :translateY(100%);
 opacity:0;
-${({isVisible})=>isVisible?`
-transition :opacity .5s  ease-out,transform .5s ease-out;
-opacity:1;  
-transform:translateY(0%); 
+${({isVisible})=>isVisible?css`
+animation-fill-mode:forwards;
+animation-duration:.5s;
+animation-name:${fadeInUp};
+ animation-timing-function:ease-out;
  `:null}
-@media(${devices.small}){
- font-size:2.4rem;
-}
+
 `
 export {
     Bullet,
     Title
 }
+

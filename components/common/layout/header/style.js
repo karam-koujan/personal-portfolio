@@ -19,8 +19,7 @@ const Header = styled.header`
  transition:background-color .5s ease-out !important;
  z-index:1;
  `:null}
- @media(${devices.medium}){
-   }
+ 
 `
 
 const MobileNavLink = styled.a`
