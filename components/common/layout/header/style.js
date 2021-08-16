@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {devices} from "../../../../styles/media";
-import { Fall } from "../../../../styles/animation";
+import { fadeInDown, Fall } from "../../../../styles/animation";
 
 const Hamburger = styled.div`
 display:none;
@@ -13,6 +13,7 @@ const Header = styled.header`
  padding:0 0 1rem 0;
  transition:background-color .5s .5s ease;
  width:100%;
+ 
  ${({showNavBar})=>showNavBar?`
  background-color:white;
  position:fixed;
@@ -76,13 +77,14 @@ const MobileNavItem = styled.li`
 `
 
 const Nav = styled.nav`
+ animation-fill-mode:forwards;
  animation-timing-function:ease-out;
- animation-name:${Fall};
+ animation-name:${fadeInDown};
  animation-duration:.3s;
  display:flex;
  justify-content:space-between;
  padding:2.5rem 2rem;
- 
+ transform:translateY(-80%);
 `
 
 const NavLink = styled.a`

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Button} from "../../../../templates/";
 import {devices} from "../../../../styles/media";
 const Footer = styled.footer`
+ height:100%;
  background-color:var(--primary);
  bottom:0;
  display:flex;
