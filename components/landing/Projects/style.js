@@ -5,9 +5,9 @@ const Project = styled.div`
  background-color:var(--white);
  box-shadow:0px 1px 5px 0px rgba(0,0,0,.5) , 0px 0px 0px 0px rgba(0,0,0,1);
  color:var(--primary);
- max-width:300px;
-
- @media(${devices.small}){
+ padding:0rem 0 0 0;
+ @media(${devices.medium}){
+     margin-bottom:4rem;
      max-width:100%;
     }
 `
@@ -24,8 +24,9 @@ const ProjectImg = styled.div`
 `
 const ProjectTitle = styled.h3`
  font-size:1rem;
- margin:1rem 1rem;
- text-transform:capitalize;
+ margin:0;
+ padding:1rem;
+ text-ransform:capitalize;
 `
 const Section = styled.section`
  padding:4rem 2rem;
@@ -59,11 +60,11 @@ const Text = styled.p`
 `
 
 const Wrapper = styled.div`
- display:flex;
- flex-wrap:wrap;
+ display:grid;
+ grid-gap:3.5rem;
+ grid-template-columns :repeat(auto-fit,300px);
  opacity:0;
  padding:4rem 0;
- gap:4rem;
  transform:translateY(20%);
  ${({isVisible})=>isVisible?css`
  animation-delay:1s;
@@ -72,7 +73,9 @@ const Wrapper = styled.div`
  animation-name :${fadeInUp}; 
  animation-timing-function:ease;  
  `:null}
-
+ @media(${devices.medium}){
+     display:block;
+ }
 `
 
 export {

@@ -8,7 +8,7 @@ const Contact = ({data:{paragraph,contactSource}})=>{
     const [isVisible,ref] = useOnScreen({rootMargin:'0px',threshold:0.4}) 
  
   return(
-      <Section ref={ref} >
+      <Section ref={ref} id="contact">
           <Title isVisible={isVisible}>
               Contact Me<Bullet size={{'--size':'4.3rem'}}>.</Bullet>
           </Title>

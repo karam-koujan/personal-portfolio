@@ -25,11 +25,7 @@ const Projects = ({data})=>{
                  <Text>{text}</Text>
                  </a>
                  </Link>
-                 <TechList>
-                 {techs.map((tech,idx)=>(
-                     <TechItem key={idx}>{tech}</TechItem>
-                     ))}
-                     </TechList>
+               
              </Project>
              ))}
 

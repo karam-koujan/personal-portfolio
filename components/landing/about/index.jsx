@@ -6,8 +6,9 @@ import {Section,ImgWrapper,TechList,TechItem,Text,TextWrapper,Wrapper} from "./s
 
 const About = ({data:{text,skills}})=>{
   const [isVisible,ref] = useOnScreen({rootMargin:'0px 0px 0px 0px',threshold:0.1}) 
-      return(
-       <Section id="about"  ref={ref} tabIndex="0"  >
+   
+  return(
+       <Section id="about"  ref={ref} tabIndex="0">
            <Title isVisible={isVisible}>About Me<Bullet style={{'--size':'4.5rem'}} >.</Bullet>
 
            </Title>

@@ -63,8 +63,10 @@ const Title = styled.h1`
 const Wrapper = styled.div`
  max-width:800px;
  width:100%;
+ transform:translateY(80%);
+ animation-fill-mode:forwards;
  animation-timing-function:ease-out;
- animation-name:${Climb};
+ animation-name:${fadeInUp};
  animation-duration:.3s;
  @media(${devices.medium}){
    padding:0 0 0 2rem;
