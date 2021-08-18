@@ -1,13 +1,19 @@
 import styled,{css} from "styled-components";
 import {devices} from "../../../styles/media";
 import {fadeInUp} from "../../../styles/animation"
+
+
 const Project = styled.div`
  background-color:var(--white);
  box-shadow:0px 1px 5px 0px rgba(0,0,0,.5) , 0px 0px 0px 0px rgba(0,0,0,1);
  color:var(--primary);
- padding:0rem 0 0 0;
+ padding:0rem 0 2rem 0;
+ @media(max-width:1038px ){
+   margin:0 auto 4rem auto;
+   max-width:60%;
+  }
  @media(${devices.medium}){
-     margin-bottom:4rem;
+     margin:0 0 4rem 0;
      max-width:100%;
     }
 `
@@ -61,8 +67,8 @@ const Text = styled.p`
 
 const Wrapper = styled.div`
  display:grid;
- grid-gap:3.5rem;
- grid-template-columns :repeat(auto-fit,300px);
+ grid-gap:5%;
+ grid-template-columns :repeat(auto-fit,minmax(30%,300px));
  opacity:0;
  padding:4rem 0;
  transform:translateY(20%);
@@ -73,9 +79,10 @@ const Wrapper = styled.div`
  animation-name :${fadeInUp}; 
  animation-timing-function:ease;  
  `:null}
- @media(${devices.medium}){
-     display:block;
+ @media(max-width:1038px ){
+  display:block;
  }
+ 
 `
 
 export {
