@@ -78,9 +78,9 @@ const MobileNavItem = styled.li`
 
 const Nav = styled.nav`
  animation-fill-mode:forwards;
- animation-timing-function:ease-out;
+ animation-timing-function:ease;
  animation-name:${fadeInDown};
- animation-duration:.3s;
+ animation-duration:.5s;
  display:flex;
  justify-content:space-between;
  padding:2.5rem 2rem;
