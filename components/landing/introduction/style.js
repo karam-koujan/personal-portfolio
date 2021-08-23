@@ -13,6 +13,9 @@ const GetInTouch = styled(Button)`
       border:2px solid var(--blue);
       transform:scale(1.1);
   }
+  @media(${devices.small}){
+    margin:0 auto;
+  }
 `
 
 const Section = styled.section`
@@ -67,10 +70,11 @@ const Wrapper = styled.div`
  animation-fill-mode:forwards;
  animation-timing-function:ease;
  animation-name:${fadeInUp};
- animation-duration:.5s;
+ animation-duration:.3s;
  @media(${devices.medium}){
-   padding:0 0 0 2rem;
+   padding:0  2rem;
  } 
+ 
 `
 
 export {
