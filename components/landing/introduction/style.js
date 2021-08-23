@@ -65,9 +65,9 @@ const Wrapper = styled.div`
  width:100%;
  transform:translateY(80%);
  animation-fill-mode:forwards;
- animation-timing-function:ease-out;
+ animation-timing-function:ease;
  animation-name:${fadeInUp};
- animation-duration:.3s;
+ animation-duration:.5s;
  @media(${devices.medium}){
    padding:0 0 0 2rem;
  } 
