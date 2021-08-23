@@ -1,16 +1,20 @@
 import {getContentByFolderName} from "../lib/queryMarkdown";
 import { About ,Contact , Introduction, Projects } from "../components/landing"
 import Layout from "../components/common/layout";
-
+import SEO from "../components/common/SEO"
 export default function Home({about,contact,projects:{projects},introduction,navigation:{navigation}}) {
   
   return (
+    <>
+    <SEO/>
      <Layout data={navigation}>
      <Introduction data={introduction} />
      <About data={about}/>
      <Projects data={projects}/>
      <Contact data={contact}/>
+       
     </Layout>
+    </>
   )
 }
 
@@ -19,7 +23,8 @@ export const getStaticProps = async()=>{
   const navigation = getContentByFolderName("navigation");
   const about = getContentByFolderName("about");
   const contact = getContentByFolderName("contact");
-  const projects = getContentByFolderName("projects")
+  const projects = getContentByFolderName("projects");
+  
   return {
     props : {
       about:about.data,
