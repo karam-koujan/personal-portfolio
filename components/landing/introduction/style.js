@@ -68,14 +68,14 @@ const Wrapper = styled.div`
  width:100%;
  transform:translateY(80%);
  animation-fill-mode:forwards;
- animation-timing-function:ease;
+ animation-timing-function:ease-out;
  animation-name:${fadeInUp};
  animation-duration:.3s;
  @media(${devices.medium}){
    padding:0  2rem;
  } 
  
-`
+` 
 
 export {
     GetInTouch,
