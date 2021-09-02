@@ -1,13 +1,12 @@
 import Link from "next/link";
-import bruno from "../../../assets/images/bruno.jpg"
 import Image from "next/image";
 import {useOnScreen} from "../../../hooks/"
 import { Bullet,Title } from "../../../templates";
 import {Project,ProjectImg,ProjectTitle,Section,TechItem,TechList,Text,Wrapper} from "./style";
- 
+
  
 const Projects = ({data})=>{
-    const [isVisible,ref] = useOnScreen({rootMargin:'0px 0px 0px 0px',threshold:0.2}) 
+    const [isVisible,ref] = useOnScreen({rootMargin:'0px 0px 0px 0px',threshold:0.1}) 
  return(
      <Section id="projects" ref={ref} tabIndex="0" >
          <Title isVisible={isVisible}>
@@ -20,12 +19,13 @@ const Projects = ({data})=>{
                  <a>
                  <ProjectTitle>{title}</ProjectTitle>
                  <ProjectImg>
-                     <Image src={bruno} layout="responsive" height={400} placeholder="blur" />
+                     <Image src={image} layout="responsive" height={150} width={200}  alt={`${title} image`}/>
                  </ProjectImg>
                  <Text>{text}</Text>
                  </a>
                  </Link>
-               
+
+                   
              </Project>
              ))}
 
