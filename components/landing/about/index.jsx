@@ -1,11 +1,12 @@
-import bruno from "../../../assets/images/bruno.jpg";
+
 import Image from "next/image";
+import profileImg from "../../../public/assets/images/profileImg.jpg"
 import { useOnScreen } from "../../../hooks";
 import {Bullet,Title} from "../../../templates/";
 import {Section,ImgWrapper,TechList,TechItem,Text,TextWrapper,Wrapper} from "./style";
 
 const About = ({data:{text,skills}})=>{
-  const [isVisible,ref] = useOnScreen({rootMargin:'0px 0px 0px 0px',threshold:0.1}) 
+  const [isVisible,ref] = useOnScreen({rootMargin:'0px 0px 0px 0px',threshold:0.3}) 
    
   return(
        <Section id="about"  ref={ref} tabIndex="0">
@@ -26,7 +27,7 @@ const About = ({data:{text,skills}})=>{
               </TechList>
               </TextWrapper>
               <ImgWrapper isVisible={isVisible}>
-               <Image src={bruno} layout="responsive" placeholder="blur" />
+               <Image src={profileImg} layout="responsive" placeholder="blur" alt="my image"/>
               </ImgWrapper>
           </Wrapper>           
        </Section>
