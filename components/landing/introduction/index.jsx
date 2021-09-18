@@ -11,7 +11,7 @@ const Introduction = ({data:{name,introduction}})=>{
           <Text>
             {introduction}
           </Text>
-          <Link href="/contact" >
+          <Link href="#contact" >
             <GetInTouch tabIndex="0">
               get in touch
             </GetInTouch>

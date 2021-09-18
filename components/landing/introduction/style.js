@@ -66,11 +66,11 @@ const Title = styled.h1`
 const Wrapper = styled.div`
  max-width:800px;
  width:100%;
- transform:translateY(80%);
+ transform:translateY(20%);
  animation-fill-mode:forwards;
- animation-timing-function:ease-out;
+ animation-timing-function:linear;
  animation-name:${fadeInUp};
- animation-duration:.3s;
+ animation-duration:.4s;
  @media(${devices.medium}){
    padding:0  2rem;
  } 
