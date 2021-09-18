@@ -77,15 +77,15 @@ const MobileNavItem = styled.li`
 `
 
 const Nav = styled.nav`
- animation-duration:.3s;
+ animation-duration:.4s;
  animation-fill-mode:forwards;
- animation-timing-function:ease-out;
+ animation-timing-function:linear;
  animation-name:${fadeInDown};
  display:flex;
  justify-content:space-between;
  opacity:0;
  padding:2.5rem 2rem;
- transform:translateY(-80%);
+ transform:translateY(-20%);
 `
 
 const NavLink = styled.a`

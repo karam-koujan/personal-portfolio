@@ -7,6 +7,9 @@ import { Header as Wrapper,MobileNavLink,MobileNavList,MobileNavItem,Nav,NavLink
 
 const Header = ({data})=>{
     const [showNavBar,setShowNavBar] = useState(false);
+    useEffect(()=>{
+         document.body.onscroll = ()=>setShowNavBar(false)
+    },[showNavBar])
  return(
      <Wrapper showNavBar={showNavBar} >
      <Nav showNavBar={showNavBar} >

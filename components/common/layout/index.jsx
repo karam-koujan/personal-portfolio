@@ -6,8 +6,10 @@ const Layout = ({children,data})=>{
   return(
       <>
        <Header data={data}/>
+       <main>
        {children}
-       <Footer/>
+       </main>
+       <Footer />
       </>
   )
 }
