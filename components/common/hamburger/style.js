@@ -19,6 +19,7 @@ display:none;
 flex-direction:column;
 justify-content:center;
 position:relative;
+height:26px;
 width:26px;
  &::before,&::after{
      background-color:var(--nav-link);

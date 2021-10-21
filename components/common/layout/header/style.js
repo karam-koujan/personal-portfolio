@@ -110,7 +110,7 @@ const NavItem = styled.li`
 
  &::before,&::after{
      background-color:var(--blue);
-     bottom:-100%;
+     bottom:-0%;
      border-radius:6px;
      content:"";
      height:6px;

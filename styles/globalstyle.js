@@ -1,3 +1,6 @@
+import {createGlobalStyle} from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
 html, 
 body {
   padding: 0;
@@ -34,3 +37,4 @@ img{
   height:auto;
   width:100%;
 }
+` 

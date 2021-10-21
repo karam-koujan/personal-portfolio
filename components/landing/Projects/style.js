@@ -8,7 +8,7 @@ const Project = styled.div`
  box-shadow:rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
  color:var(--primary);
  cursor:pointer;
- padding:0rem 0 2rem 0;
+ padding:0rem 0 0rem 0;
  &:hover{
     box-shadow:rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;
   & div {
@@ -68,8 +68,8 @@ const TechItem = styled.li`
 `
 const Text = styled.p`
  line-height:22px;
- margin: 1.5rem 2rem;
- text-align:center;
+ letter-spacing:.2px;
+ margin: 1.5rem 1rem;
 `
 
 const Wrapper = styled.div`

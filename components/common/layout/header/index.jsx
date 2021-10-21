@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-//import hamburger from "../../../../assets/icons/hamburger.svg";
 import Hamburger from "../../hamburger";
 import { Header as Wrapper,MobileNavLink,MobileNavList,MobileNavItem,Nav,NavLink,NavList,NavItem} from "./style";
-
+import Logo from  "../../logo"
 const Header = ({data})=>{
+    console.log(data)
     const [showNavBar,setShowNavBar] = useState(false);
     useEffect(()=>{
          document.body.onscroll = ()=>setShowNavBar(false)
@@ -13,14 +12,14 @@ const Header = ({data})=>{
  return(
      <Wrapper showNavBar={showNavBar} >
      <Nav showNavBar={showNavBar} >
-         <span>Logo</span>
+      <Logo/>
       <Hamburger showNavBar={showNavBar} handleShowNavBar={_=>setShowNavBar(!showNavBar)} />
       <MobileNavList showNavBar={showNavBar}>
       {data.map((navigationItem,idx)=>(
               <MobileNavItem key={idx} tabIndex="0">
-                  <Link href={`#${navigationItem}`} >
+                  <Link href={navigationItem.link} >
                       <MobileNavLink onClick={_=>setShowNavBar(false)}>
-                         {navigationItem}
+                         {navigationItem.text}
                       </MobileNavLink>
                   </Link>
               </MobileNavItem>
@@ -32,9 +31,9 @@ const Header = ({data})=>{
              {data.map((navigationItem,idx)=>(
 
               <NavItem key={idx} tabIndex="0">
-                  <Link href={`#${navigationItem}`}>
+                  <Link href={navigationItem.link}>
                       <NavLink>
-                          {navigationItem}
+                          {navigationItem.text}
                       </NavLink>
                   </Link>
               </NavItem>

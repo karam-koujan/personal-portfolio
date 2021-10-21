@@ -1,9 +1,10 @@
 import Link from "next/link";
+import FirstSection from "../../common/firstSection";
 import {GetInTouch,Section,Text,Title, Wrapper} from "./style";
 
 const Introduction = ({data:{name,introduction}})=>{
   return(
-      <Section>
+      <FirstSection>
         <Wrapper>
           <Title style={{"--typeWriterChar":"14"}}>
           Hey, I’m {name}
@@ -11,13 +12,13 @@ const Introduction = ({data:{name,introduction}})=>{
           <Text>
             {introduction}
           </Text>
-          <Link href="#contact" >
+          <Link href="/contact" >
             <GetInTouch tabIndex="0">
               get in touch
             </GetInTouch>
           </Link>
         </Wrapper>
-      </Section>
+      </FirstSection>
   )
 }
 

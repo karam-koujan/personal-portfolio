@@ -9,13 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@plaiceholder/base64": "^1.0.0",
+    "@plaiceholder/css": "^1.0.0",
+    "@plaiceholder/next": "^2.1.0",
+    "formik": "^2.2.9",
     "gray-matter": "^4.0.3",
     "next": "11.0.1",
+    "plaiceholder": "^2.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.13.2",
     "eslint": "7.32.0",
     "eslint-config-next": "11.0.1"
   }

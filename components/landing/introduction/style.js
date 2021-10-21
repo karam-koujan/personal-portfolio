@@ -49,8 +49,7 @@ const Text = styled.p`
  font-size:1.12rem;
  line-height:35px;
  margin:2rem 0;
- 
- 
+
 `
 const Title = styled.h1`
   color:var(--main-title);
@@ -60,7 +59,6 @@ const Title = styled.h1`
   position:relative;
   text-transform:capitalize;
 
- 
 `
 
 const Wrapper = styled.div`

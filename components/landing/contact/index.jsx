@@ -4,8 +4,8 @@ import {Bullet,Title} from "../../../templates/"
 import {ContactLink,Section,Text,Wrapper} from "./style";
 
 
-const Contact = ({data:{paragraph,contactSource}})=>{
-    const [isVisible,ref] = useOnScreen({rootMargin:'0px',threshold:0.4}) 
+const Contact = ({data:{paragraph,contactSource:{link,text}}})=>{
+   // const [isVisible,ref] = useOnScreen({rootMargin:'0px',threshold:0.4}) 
  
   return(
       <Section ref={ref} id="contact">
@@ -16,13 +16,12 @@ const Contact = ({data:{paragraph,contactSource}})=>{
               <Text >
                  {paragraph}              
                 </Text>
-                {contactSource.map(({link,text},idx)=>(
-              <Link href={link} key={idx}>
-              <ContactLink tabIndex="0">
+              <Link  href={link}>
+              <ContactLink  href={link} tabIndex="0">
                   {text}
               </ContactLink>
               </Link>
-                ))}
+            
           </Wrapper>
       </Section>
   )
