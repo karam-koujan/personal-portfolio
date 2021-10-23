@@ -29,7 +29,9 @@ a {
   cursor:pointer;
   text-decoration: none;
 }
-
+*:focus{
+  outline:none;
+}
 *,*::before,*::after {
   box-sizing: border-box;
 }

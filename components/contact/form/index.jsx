@@ -17,11 +17,20 @@ const Form = ({contact:{contactSource:{link,email}}})=>{
               email:"",
               message:""
           },
-          validationSchema
-    })
+          validationSchema,
+          onSubmit :()=>{
+               fetch("https://formsubmit.co/karamkoujandev@gmail.com",{
+                headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json'
+                },
+                method: "POST",
+                body: JSON.stringify(values)
+            })     
+            }})
   return(
     <Section>
-    <Wrapper>
+    <Wrapper action="https://formsubmit.co/karamkoujandev@gmail.com" method="POST" onSubmit={handleSubmit}>
     <Strong>
         Feel free to email me via <Email href={link} target={link}>{email}</Email>
     </Strong>
@@ -43,7 +52,7 @@ const Form = ({contact:{contactSource:{link,email}}})=>{
      </Label>
      <TextArea name="message" error={errors.message&&touched.message} aria-label="message" onBlur={handleBlur} onChange={handleChange} value={values.message} required/>
      {errors.message&&touched.message?<Error>{errors.message}</Error>:null}
-     <Send>
+     <Send type="submit" onClick={handleSubmit}>
          send
      </Send>
   </Wrapper>

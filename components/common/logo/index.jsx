@@ -9,7 +9,7 @@ const Logo = ()=>{
   const router = useRouter()
   return(
       <Wrapper>
-          <img src={logo.src} alt="Logo" onClick={()=>router.replace("/")}/>
+          <img src={logo.src} tabIndex="0" alt="Logo" onClick={()=>router.replace("/")}/>
       </Wrapper>
   )
 }

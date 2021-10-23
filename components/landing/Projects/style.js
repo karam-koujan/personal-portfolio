@@ -9,7 +9,8 @@ const Project = styled.div`
  color:var(--primary);
  cursor:pointer;
  padding:0rem 0 0rem 0;
- &:hover{
+ transition:all 0.5 ease;
+ &:hover,&:focus{
     box-shadow:rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;
   & div {
     transform:scale(1.04);

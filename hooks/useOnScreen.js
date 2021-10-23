@@ -10,7 +10,7 @@ export const useOnScreen = (options)=>{
      if(ref.current){
          observer.observe(ref.current)
      }
-     return ()=> observer.unobserve(ref.current)
+     return ()=> ref.current ? observer.unobserve(ref.current):null
 
    },[ref,options])
 

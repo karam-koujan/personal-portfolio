@@ -7,7 +7,7 @@ const Footer = ()=>{
        <Wrapper>
        <div> 
            <Title>Let's Work Together</Title>
-           <Link href="#contact">
+           <Link href="/contact">
            <ContactLink tabIndex="0">
                 Get In Touch   
             </ContactLink>           
