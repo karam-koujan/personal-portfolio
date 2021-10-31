@@ -8,7 +8,7 @@ const Project = styled.div`
  box-shadow:rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
  color:var(--primary);
  cursor:pointer;
- padding:0rem 0 0rem 0;
+ padding:0 0 .5rem 0;
  transition:all 0.5 ease;
  &:hover,&:focus{
     box-shadow:rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;
@@ -29,10 +29,14 @@ const Project = styled.div`
      max-width:100%;
     }
 `
+const ProjectLink = styled.a`
+ display:block;
+ width:100%;
+`
 const ProjectImg = styled.div`
+ background-color:${({placeholderColor})=>placeholderColor};
  cursor:pointer;
  transition:transform .2s ease , box-shadow .2s ease;
-
  width:100%;
 `
 const ProjectTitle = styled.h3`
@@ -45,7 +49,6 @@ const Section = styled.section`
  padding:4rem 2rem;
 
  @media(${devices.small}){
-    padding-top:0rem;
    }
 `
 const TechList = styled.ul`
@@ -95,6 +98,7 @@ const Wrapper = styled.div`
 
 export {
     Project,
+    ProjectLink,
     ProjectImg,
     ProjectTitle,
     Section,

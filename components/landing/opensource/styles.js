@@ -33,7 +33,20 @@ const RepoLink = styled.a`
      opacity:.9;
  }
 `
-
+const RepoStats = styled.div`
+ align-items:center;
+ display:flex;
+ gap:2rem;
+ margin:2rem 0 0 0;
+ &>div{
+   align-items:center;
+   display:flex;
+ }
+`
+const RepoStatsNum = styled.span`
+margin:0 0 0 .5rem;
+font-size:.9rem;
+`
 const RepoText = styled.p`
  color:var(--primary);
  line-height:25px;
@@ -54,6 +67,9 @@ const Section = styled.section`
   padding:0 2rem 10rem 2rem ;
 `
 
+const Icon = styled.div`
+ width:15px;
+`
 
 const Wrapper = styled.div`
 display:grid;
@@ -78,8 +94,11 @@ ${({isVisible})=>isVisible?css`
 export {
     Repo,
     RepoLink,
+    RepoStats,
+    RepoStatsNum,
     RepoText,
     RepoTitle,
     Section,
+    Icon,
     Wrapper
 }

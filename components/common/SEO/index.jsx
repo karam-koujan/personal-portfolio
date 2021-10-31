@@ -1,8 +1,8 @@
 import Head from "next/head";
-import {title,description,url,image,name} from "../../../data/config";
+import {description,url,image,name} from "../../../data/config";
 
 
-const SEO = ()=>{
+const SEO = ({title})=>{
   return(
       <Head>
            <title>{title}</title>

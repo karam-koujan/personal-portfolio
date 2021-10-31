@@ -1,26 +1,26 @@
 ---
 projects : [{
-    title: Instegram clone,
+    title: social media app,
     image: "/assets/images/profileImg.jpg",
-    text: "lorem ipsum lorem ipsuh lorem ipsum lorem ipsuhlorem ipsum lorem ipsuh lorem ipsum lorem ipsuh",
-    github: "",
+    text: "a social media app built with mern stack",
+    placeholder: "#262626",
     link: "https://instegram-clone.netlify.app",
     techs : ["MongoDb","Express","React.js","Styled-components","React-query"]
     },
     {
-    title: side project,
+    title: local freelancers,
     image: "/assets/images/sideProject.jpg",
     text: "find talented people closer to your current location",
-    github: "",
+    placeholder: "#19BD33",
     link: "",
     techs : ["MongoDb","Express","React.js","Styled-components","React-query"]
     },
      {
-    title: Instegram clone,
+    title: Personal Portfolio,
     image: "/assets/images/profileImg.jpg",
-    text: "lorem ipsum lorem ipsuh lorem ipsum lorem ipsuhlorem ipsum lorem ipsuh lorem ipsum lorem ipsuh",
-    github: "",
-    link: "",
+    text: "my personal website built with Next Js",
+    placeholder: "#191a1d",
+    link : "",
     techs : ["MongoDb","Express","React.js","Styled-components","React-query"]
 
     }]

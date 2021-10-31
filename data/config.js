@@ -2,7 +2,7 @@ module.exports =  {
     title:"karam koujan | Full-stack Dev",
     logo:"",
     name:"karam koujan",
-    description:"I'm karam koujan a self-taught javascript developer , interested in the web & machine learning .",
+    description:"My name is karam koujan from morocco , a full stack javascript web developer specialized in JamStack and Mern stack and passionate about computer science and machine learning , I love learning new technologies that help me improve my product's quality .",
     socialMedia : {
        twitter:"https://twitter/karam-kaku",
        github: 'https://github.com/karam-koujan'

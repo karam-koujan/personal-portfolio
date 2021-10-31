@@ -5,6 +5,8 @@ text: contact me via email,
 email: karamkoujandev@gmail.com,
 
 }
-paragraph : Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat hic labore similique itaque error ex quasi voluptatem dolores dolorem alias natus, maxime in dolor, dolorum animi recusandae quod vitae cum!
+paragraph : If you are looking for a freelancer then you are in the right place, or if you are looking for a full-time employee, otherwise, if you just want to say hi, I will definitely say Hi back to you.
+
+
 
 ---

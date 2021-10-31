@@ -7,7 +7,7 @@ export default function Contact({navigation:{navigation},contact}) {
   
   return (
     <>
-    <SEO/>
+    <SEO title="karam koujan | Contact"/>
      <Layout data={navigation} >
        <Introduction contact={contact}/>
        <Form contact={contact}/>

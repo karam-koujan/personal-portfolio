@@ -3,16 +3,16 @@ import { About ,Contact , Introduction, Projects } from "../components/landing"
 import Layout from "../components/common/layout";
 import OpenSource from "../components/landing/opensource";
 import SEO from "../components/common/SEO";
-export default function Home({about,repos:{repos},projects:{projects},introduction,navigation:{navigation}}) {
+export default function Home({about,projects:{projects},introduction,navigation:{navigation}}) {
   
   return (
     <>
-    <SEO/>
+    <SEO title="karam koujan | Full-stack Dev"/>
      <Layout data={navigation}>
      <Introduction data={introduction} />
      <About data={about}/>
      <Projects data={projects}/>
-     <OpenSource data={repos}/>  
+     <OpenSource/>  
     </Layout>
     </>
   )
@@ -23,12 +23,10 @@ export const getStaticProps = async()=>{
   const navigation = getContentByFolderName("navigation");
   const about = getContentByFolderName("about");
   const projects = getContentByFolderName("projects");
-  const repos = getContentByFolderName("opensource");
   return {
     props : {
       about:about.data,
       projects:projects.data,
-      repos : repos.data,
       introduction : introduction.data,
       navigation : navigation.data,
     }
