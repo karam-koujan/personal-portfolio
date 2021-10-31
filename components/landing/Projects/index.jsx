@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Styles from "./styles.module.css"
-import {useOnScreen} from "../../../hooks/"
+import {useOnScreen} from "../../../hooks"
 import { Bullet,Title } from "../../../templates";
 import {Project,ProjectImg,ProjectLink,ProjectTitle,Section,TechItem,TechList,Text,Wrapper} from "./style";
 
