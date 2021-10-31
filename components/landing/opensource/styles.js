@@ -1,6 +1,6 @@
 import styled,{css} from "styled-components";
 import { devices } from "../../../styles/media";
-import { fadeInUp} from "../../../styles/media";
+import { fadeInUp} from "../../../styles/animation";
 
 
 const Repo = styled.div`
