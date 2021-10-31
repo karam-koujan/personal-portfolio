@@ -1,7 +1,7 @@
 ---
 projects : [{
     title: social media app,
-    image: "/assets/images/profileImg.jpg",
+    image: "/assets/images/social-media-app.jpg",
     text: "a social media app built with mern stack",
     placeholder: "#262626",
     link: "https://instegram-clone.netlify.app",
@@ -17,7 +17,7 @@ projects : [{
     },
      {
     title: Personal Portfolio,
-    image: "/assets/images/profileImg.jpg",
+    image: "/assets/images/portfolio.jpg",
     text: "my personal website built with Next Js",
     placeholder: "#191a1d",
     link : "",

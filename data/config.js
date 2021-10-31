@@ -10,7 +10,7 @@ module.exports =  {
     image:"/public/assets/images/profileImg.jpg",
     url:"",
     contact: {
-        email: 'karamkaku2000@gmail.com',
+        email: 'karamkoujandev@gmail.com',
         phone: '+212-691-06-60-69',
       },
 }
