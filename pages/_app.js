@@ -2,12 +2,11 @@ import { ThemeProvider } from 'styled-components';
 
 import {GlobalStyle} from "../styles/globalstyle";
 function MyApp({ Component, pageProps}) {
-  return(    
-   <ThemeProvider>
+  return(
+    <>    
    <GlobalStyle/>
    <Component {...pageProps} />   
-   </ThemeProvider>
-  
+  </>
   )
 }
 

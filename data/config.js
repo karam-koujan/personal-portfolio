@@ -7,8 +7,8 @@ module.exports =  {
        twitter:"https://twitter/karam-kaku",
        github: 'https://github.com/karam-koujan'
     },
-    image:"/public/assets/images/profileImg.jpg",
-    url:"",
+    image:"/public/assets/images/profileImg.png",
+    url:"https://karamkoujan.vercel.app",
     contact: {
         email: 'karamkoujandev@gmail.com',
         phone: '+212-691-06-60-69',
