@@ -1,7 +1,6 @@
 import Link from "next/link";
 import FirstSection from "../../common/firstSection";
 import {GetInTouch,Section,Text,Title, Wrapper} from "./style";
-
 const Introduction = ({data:{name,introduction}})=>{
   return(
       <FirstSection>

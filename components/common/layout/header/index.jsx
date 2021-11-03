@@ -4,11 +4,12 @@ import Hamburger from "../../hamburger";
 import { Header as Wrapper,MobileNavLink,MobileNavList,MobileNavItem,Nav,NavLink,NavList,NavItem} from "./style";
 import Logo from  "../../logo"
 const Header = ({data})=>{
-    console.log(data)
     const [showNavBar,setShowNavBar] = useState(false);
+    /*
     useEffect(()=>{
          document.body.onscroll = ()=>setShowNavBar(false)
     },[showNavBar])
+    */
  return(
      <Wrapper showNavBar={showNavBar} >
      <Nav showNavBar={showNavBar} >

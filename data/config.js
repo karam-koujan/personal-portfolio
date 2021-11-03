@@ -5,9 +5,10 @@ module.exports =  {
     description:"My name is karam koujan from morocco , a full stack javascript web developer specialized in JamStack and Mern stack and passionate about computer science and machine learning , I love learning new technologies that help me improve my product's quality .",
     socialMedia : {
        twitter:"https://twitter/karam-kaku",
-       github: 'https://github.com/karam-koujan'
+       github: 'https://github.com/karam-koujan',
+       email: 'karamkoujandev@gmail.com'
     },
-    image:"/public/assets/images/profileImg.png",
+    image:"../../assets/images/profileImg.png",
     url:"https://karamkoujan.vercel.app",
     contact: {
         email: 'karamkoujandev@gmail.com',
