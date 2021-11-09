@@ -1,7 +1,7 @@
 import About from "./about";
 import Contact from "./contact";
 import Introduction from "./introduction";
-import Projects from "./projects";
+import Projects from "./Projects";
 export {
   About,
   Contact,
