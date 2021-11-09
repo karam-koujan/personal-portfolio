@@ -10,7 +10,7 @@ const OpenSource = ()=>{
     const [repos,setRepos] = React.useState([])
     React.useEffect(()=>{
          fetch("https://api.github.com/users/karam-koujan/repos").then(res=>res.json())
-         .then(data=>setRepos(data))
+          .then(data=>setRepos(data))
          
     },[]) 
     return(
@@ -19,8 +19,8 @@ const OpenSource = ()=>{
            open source <Bullet style={{'--size':'4.5rem'}}>.</Bullet>
        </Title>
        <Wrapper isVisible={isVisible}>
-           {repos.length?repos.map(({name,clone_url,description,forks_count,stargazers_count},idx)=>(
-         <Repo key={idx} tabIndex="0">
+           {repos.length?repos.filter(repo=>(repo.fork===false && repo.stargazers_count > 0)&&repo.description).map(({name,clone_url,id,description,forks_count,stargazers_count},idx)=>(
+         <Repo key={id} tabIndex="0">
          <Link href={clone_url}>
          <a  target={clone_url}>
           <RepoTitle>
