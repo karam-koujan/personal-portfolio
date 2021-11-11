@@ -4,7 +4,7 @@ projects : [{
     image: "/assets/images/social-media-app.jpg",
     text: "a social media app built with mern stack",
     placeholder: "#262626",
-    link: "https://instegram-clone.netlify.app",
+    link: "https://github.com/karam-koujan/personal-porfolio",
     techs : ["MongoDb","Express","React.js","Styled-components","React-query"]
     },
     {
@@ -12,7 +12,6 @@ projects : [{
     image: "/assets/images/sideProject.jpg",
     text: "find talented people closer to your current location",
     placeholder: "#19BD33",
-    link: "",
     techs : ["MongoDb","Express","React.js","Styled-components","React-query"]
     },
      {
@@ -20,7 +19,6 @@ projects : [{
     image: "/assets/images/portfolio.jpg",
     text: "my personal website built with Next Js",
     placeholder: "#191a1d",
-    link : "",
     techs : ["MongoDb","Express","React.js","Styled-components","React-query"]
 
     }]
