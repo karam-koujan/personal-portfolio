@@ -5,7 +5,9 @@ export const useOnScreen = (options)=>{
   
    useEffect(()=>{
      const observer = new IntersectionObserver(([entry])=>{
-         setIsVisible(entry.isIntersecting)
+         if(entry.isIntersecting){
+         setIsVisible(true)         
+         }
      },options)
      if(ref.current){
          observer.observe(ref.current)
