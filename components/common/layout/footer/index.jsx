@@ -8,7 +8,7 @@ const Footer = ()=>{
        <div> 
            <Title>Let's Work Together</Title>
            <Link href="/contact">
-           <ContactLink tabIndex="0">
+           <ContactLink tabIndex="0" aria-label="get in touch">
                 Get In Touch   
             </ContactLink>           
            </Link>
