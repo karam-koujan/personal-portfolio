@@ -5,6 +5,7 @@ import {devices} from "../../../styles/media";
 
 export const Wrapper = styled.div`
  cursor:pointer;
+ height:50px;
  transform:translateY(-30%);
  width:50px;
  & img {
