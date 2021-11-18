@@ -1,7 +1,7 @@
 ---
 image : "../../../assets/images/profileImg.jpg"
-text: My name is karam koujan from morocco , a full stack javascript web developer specialized in JamStack and Mern stack and passionate about computer science and machine learning , I love learning new technologies that help me improve my product's quality .
-skills: [HTML & CSS3,Javascript / ES6,React.js,Next.js,Styled-components,react-query,node.js,mongoDb,express]
+text: My name is karam koujan from morocco,a full stack javascript web developer specialized in JamStack and Mern stack,passionate about computer science and machine learning,I love learning new technologies that help me improve my product's quality .
+skills: [HTML & CSS3,Javascript / ES6,React.js,Next.js,Styled-components,react-query,node.js,mongoDb,express,git]
 ---
 
  
