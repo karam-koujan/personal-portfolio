@@ -8,7 +8,7 @@ module.exports =  {
        github: 'https://github.com/karam-koujan',
        email: 'karamkoujandev@gmail.com'
     },
-    image:"../../assets/images/profileImg.png",
+    image:"../../assets/images/profileImg.jpg",
     url:"https://karamkoujan.vercel.app",
     contact: {
         email: 'karamkoujandev@gmail.com',
