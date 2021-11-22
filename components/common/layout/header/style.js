@@ -25,6 +25,7 @@ const Header = styled.header`
 
 const MobileNavLink = styled.a`
  color:#5E5E5E;
+ text-transform:uppercase;
  transition:color .2s ease-in-out;
  &:hover,&:focus{
      color:var(--primary);
@@ -70,7 +71,9 @@ height:100vh;
 `
 const MobileNavItem = styled.li`
  border-bottom:1px solid var(--nav-link);
- font-size:1.37rem;
+ font-size:1.3rem;
+ font-weight:200;
+ letter-spacing:1px;
  list-style :none;
  margin-bottom:2rem;
  padding:0 0 1rem 0;
