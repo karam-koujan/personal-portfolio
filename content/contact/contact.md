@@ -5,7 +5,7 @@ text: contact me via email,
 email: karamkoujandev@gmail.com,
 
 }
-paragraph : If you are looking for a freelancer then you are in the right place, or if you are looking for a full-time employee, otherwise, if you just want to say hi, I will definitely say Hi back to you.
+paragraph : If you are looking for a freelancer or a full-time employee, otherwise if you just want to say hi, I will definitely say Hi back to you.
 
 
 
