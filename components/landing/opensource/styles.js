@@ -76,6 +76,8 @@ display:grid;
 margin:6rem 0 0 0;
 grid-template-columns:1fr 1fr 1fr;
 gap :1rem;
+opacity:0;
+transform:translateY(20%);
 ${({isVisible})=>isVisible?css`
  animation-delay:1s;
  animation-duration:.6s;
