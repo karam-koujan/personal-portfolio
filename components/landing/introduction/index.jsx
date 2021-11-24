@@ -12,11 +12,9 @@ const Introduction = ({data:{name,introduction}})=>{
             {introduction}
           </Text>
           <BtnWrapper>
-          <Link href="/contact" >
-            <Btn tabIndex="0">
+            <Btn tabIndex="0" href="https://drive.google.com/file/d/1-4H7Kh83-JzM7V5anX1Wj65z4R47wCnM/view" target="https://drive.google.com/file/d/1-4H7Kh83-JzM7V5anX1Wj65z4R47wCnM/view">
               my resume
             </Btn>
-          </Link>
           <Link href="/contact" >
             <Btn tabIndex="0">
               get in touch
