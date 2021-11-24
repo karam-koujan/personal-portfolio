@@ -18,6 +18,7 @@ border:2px solid var(--blue);
   }
 `
 const BtnWrapper = styled.div`
+ padding:0 0 5.4rem 0;
  display:flex;
  gap:2rem;
  @media(${devices.small}){
@@ -54,7 +55,7 @@ const Section = styled.section`
 const Text = styled.p`
  color:var(--nav-link);
  font-family:Roboto,sans-serif;
- font-size:clamp(.8rem,3vw,1.15rem);
+ font-size:1.15rem;
  line-height:35px;
  margin:2rem 0;
 
