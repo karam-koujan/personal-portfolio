@@ -1,6 +1,6 @@
 import Link from "next/link";
 import FirstSection from "../../common/firstSection";
-import {GetInTouch,Section,Text,Title, Wrapper} from "./style";
+import {Btn,BtnWrapper,Text,Title, Wrapper} from "./style";
 const Introduction = ({data:{name,introduction}})=>{
   return(
       <FirstSection>
@@ -11,11 +11,18 @@ const Introduction = ({data:{name,introduction}})=>{
           <Text>
             {introduction}
           </Text>
+          <BtnWrapper>
           <Link href="/contact" >
-            <GetInTouch tabIndex="0">
-              get in touch
-            </GetInTouch>
+            <Btn tabIndex="0">
+              my resume
+            </Btn>
           </Link>
+          <Link href="/contact" >
+            <Btn tabIndex="0">
+              get in touch
+            </Btn>
+          </Link>
+            </BtnWrapper>
         </Wrapper>
       </FirstSection>
   )
