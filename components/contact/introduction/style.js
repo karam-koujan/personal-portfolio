@@ -23,6 +23,7 @@ const Text = styled.p`
 `
 const Wrapper = styled.div`
 max-width:800px;
+padding:0 0 4rem 0;
 width:100%;
 transform:translateY(20%);
 animation-fill-mode:forwards;

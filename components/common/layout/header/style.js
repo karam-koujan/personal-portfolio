@@ -46,6 +46,7 @@ width:100%;
 z-index:1;
 ${({showNavBar})=>showNavBar?`
 height:100vh;
+
  transition :height .3s 1s ease-out !important;
 }`:null}
 

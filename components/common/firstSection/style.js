@@ -7,7 +7,6 @@ export const Section = styled.section`
  background-color:var(--primary);
  display:flex;
  justify-content:center;
- height:500px;
  padding-block:min(5rem,10vw);
  padding-top:0 2rem;
  position:relative;
