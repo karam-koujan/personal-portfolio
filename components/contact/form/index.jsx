@@ -19,7 +19,7 @@ const Form = ({contact:{contactSource:{link,email}}})=>{
           },
           validationSchema,
           onSubmit :()=>{
-               fetch("https://formsubmit.co/karamkoujandev@gmail.com",{
+               fetch("https://formsubmit.co/455e550f85f6a23e8191f90a4df86f42",{
                 headers: {
                   'Accept': 'application/json',
                   'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ const Form = ({contact:{contactSource:{link,email}}})=>{
             }})
   return(
     <Section>
-    <Wrapper action="https://formsubmit.co/karamkoujandev@gmail.com" method="POST" onSubmit={handleSubmit}>
+    <Wrapper action="https://formsubmit.co/455e550f85f6a23e8191f90a4df86f42" method="POST" onSubmit={handleSubmit}>
     <Strong>
         Feel free to email me via <Email href={link} target={link}>{email}</Email>
     </Strong>
