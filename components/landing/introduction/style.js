@@ -13,14 +13,20 @@ border:2px solid var(--blue);
       background-color:transparent;
       border:2px solid var(--blue);
   }
+  &+&{
+    margin-left:2rem;
+
+  }
   @media(${devices.small}){
     margin:0 auto;
+    &+&{
+      margin:2rem auto 0 auto;
+    }
   }
 `
 const BtnWrapper = styled.div`
  padding:0 0 5.4rem 0;
  display:flex;
- gap:2rem;
  @media(${devices.small}){
   flex-direction:column;
   justify-content:center;
