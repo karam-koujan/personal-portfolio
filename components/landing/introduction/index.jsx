@@ -7,7 +7,7 @@ const Introduction = ({data:{name,introduction}})=>{
       <FirstSection>
         <Wrapper>
           <Title style={{"--typeWriterChar":"14"}}>
-          Hey, I’m {name}
+          Hey, I’m {name}  ff
           </Title>
           <Text>
             {introduction}

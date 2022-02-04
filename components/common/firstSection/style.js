@@ -12,11 +12,8 @@ export const Section = styled.section`
  padding-top:0 2rem;
  position:relative;
  &::before{
-  background-color:transparent;
-  border-top:0px solid white;
-  border-left:1400px solid transparent;
-  border-bottom:70px solid white;
-  border-right:0px solid white;
+  background-color:red;
+  clip-path:polygon(100% 50%,100% 100%,100% 100%);
   bottom:-1px; 
   content:"";   
   height:40px;
