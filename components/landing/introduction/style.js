@@ -1,5 +1,5 @@
 import {Button} from "../../../templates";
-import {blink,Climb,fadeInUp,typeWriter} from "../../../styles/animation.js";
+import {fadeInUp} from "../../../styles/animation.js";
 import {devices} from "../../../styles/media";
 import styled from "styled-components";
  
@@ -33,30 +33,7 @@ const BtnWrapper = styled.div`
 }
 `
 
-const Section = styled.section`
- background-color:var(--primary);
- display:flex;
- justify-content:center;
- height:500px;
- padding-block:min(5rem,10vw);
- padding-top:0 2rem;
- position:relative;
- &::before{
-  background-color:transparent;
-  border-top:0px solid white;
-  border-left:1400px solid transparent;
-  border-bottom:70px solid white;
-  border-right:0px solid white;
-  bottom:-1px; 
-  content:"";   
-  height:40px;
-  position:absolute;
-  width:100%;
-  }
-  @media(${devices.small}){
-    padding-left:0rem;
-   }
-`
+
 
 const Text = styled.p`
  color:var(--nav-link);
@@ -93,7 +70,6 @@ const Wrapper = styled.div`
 export {
     Btn,
     BtnWrapper,
-    Section,
     Text,
     Title,
     Wrapper

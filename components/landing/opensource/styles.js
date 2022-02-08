@@ -64,7 +64,7 @@ const RepoTitle = styled.h3`
 `
 
 const Section = styled.section`
-  padding:0 2rem 10rem 2rem ;
+  padding:0 2rem 4rem 2rem ;
 `
 
 const Icon = styled.div`
@@ -73,7 +73,7 @@ const Icon = styled.div`
 
 const Wrapper = styled.div`
 display:grid;
-margin:6rem 0 0 0;
+margin:5rem 0 0 0;
 grid-template-columns:1fr 1fr 1fr;
 gap :1rem;
 opacity:0;

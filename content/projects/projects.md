@@ -11,7 +11,7 @@ projects : [{
     title: local freelancers,
     image: "/assets/images/sideProject.jpg",
     link: "https://github.com/karam-koujan/side-project#readme",
-    text: "find talented people closer to your current location",
+    text: "find talented freelancers close to your current location",
     placeholder: "#19BD33",
     techs : ["MongoDb","Express","React.js","Styled-components","React-query"]
     },

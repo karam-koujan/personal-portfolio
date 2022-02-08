@@ -20,17 +20,14 @@ const Footer = styled.footer`
  padding:min(7rem,30vh) 0 1rem 0;
  position:relative;
  &::before{
-    background-color:transparent;
-    border-bottom:0px solid white;
-    border-left:1400px solid transparent;
-    border-top:80px solid white;
-    border-right:0 solid white;
+    background-color:white;
     content:"";   
-    height:40px;
-    left:-1%;
+    height:105px;
+    left:-10px;
+    right:0px;
+    clip-path:polygon(0% 0%,100% 100%,100% 0%);
     position:absolute;
     top:-1px; 
-    width:100%;
    }
 
 
