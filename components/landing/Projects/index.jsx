@@ -12,7 +12,7 @@ const Projects = ({data})=>{
  return(
      <Section id="projects" ref={ref} tabIndex="0" >
          <Title isVisible={isVisible}>
-             Experemental Projects<Bullet style={{'--size':'4.5rem'}}>.</Bullet>
+             Experimental Projects<Bullet style={{'--size':'4.5rem'}}>.</Bullet>
          </Title>
          <Wrapper isVisible={isVisible}>
              {data.map(({title,text,image,link,placeholder},idx)=>(
