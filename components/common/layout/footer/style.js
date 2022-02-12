@@ -65,7 +65,7 @@ const SocialMediaLink = styled.a`
  font-weight:400;
  letter-spacing:1px;
  margin-left:.5rem;
- text-transform :uppercase;
+ text-transform :capitalize;
  transition:color .5s ease-in-out;
 
  &:hover,&:focus{
