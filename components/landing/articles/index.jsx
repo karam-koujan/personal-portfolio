@@ -2,7 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Title , Bullet } from "../../../templates";
-import {ArticleImg, ArticleWrapper, Section,TextWrapper,Wrapper,Tag, TagWrapper,Date,Duration,Btn, ArticleTitle, ArticleText, BtnWrapper} from "./style";
+import {ArticleImg,ArticleMetaData, ArticleWrapper, Section,TextWrapper,Wrapper,Tag, TagWrapper,Date,Duration,Btn, ArticleTitle, ArticleText, BtnWrapper} from "./style";
 import {useOnScreen} from "../../../hooks";
 
 
@@ -25,12 +25,14 @@ const Articles = ({data})=>{
             <TextWrapper>
             <ArticleTitle>{title}</ArticleTitle>
             <ArticleText>{introduction}</ArticleText>
+            <ArticleMetaData>
             <TagWrapper>
             {tags.map((tag,idx)=>(
                 <Tag key={idx}>{tag}</Tag> 
             ))}
             </TagWrapper>
             <Date>{date}</Date><Duration>{duration}</Duration>
+          </ArticleMetaData>
             </TextWrapper>
             </a>     
           </Link>
