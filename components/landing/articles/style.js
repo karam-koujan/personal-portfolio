@@ -73,6 +73,7 @@ const Wrapper = styled.div`
  color:var(--primary);
  cursor:pointer;
  padding:0 0 1rem 0;
+ position:relative;
  transition:all 0.5 ease;
  &>img{
   border-top-left-radius:8px;
@@ -96,6 +97,8 @@ const TagWrapper = styled.div`
  display:flex;
  gap:1rem;
  padding:.8rem 0 1rem 0;
+ width:100%;
+ flex-wrap:wrap;
 `    
 const Tag = styled.div`
  background-color:var(--blue);
@@ -114,10 +117,19 @@ font-size:.9rem;
  padding-left:1rem;
 `
 const TextWrapper = styled.div`
- padding:0 1rem;
+ padding:0 1rem 5rem 1rem;
+`
+const ArticleMetaData = styled.div`
+ bottom:0;
+ width:100%;
+ left:0;
+ right:0;
+ padding:0 1rem 1rem 1rem;
+ position:absolute;
 `   
 export {
     ArticleImg,
+    ArticleMetaData,
     ArticleText,
     ArticleTitle,
     ArticleWrapper,
