@@ -28,7 +28,7 @@ articles: [
      placeholder: "#D9C51B",
      duration: 2 min,
     date: 28 févr. 2022,
-     link:https://dev.to/karamkoujan/var-vs-let-vs-const-peg
+    link: https://dev.to/karamkoujan/var-vs-let-vs-const-peg
  }
 
 ]
