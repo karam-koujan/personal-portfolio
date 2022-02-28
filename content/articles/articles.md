@@ -19,6 +19,16 @@ articles: [
      duration: 3 min,
     date: 14 févr. 2022,
      link: https://dev.to/karamkoujan/arrow-function-vs-regular-function-5c19
+ },
+ {
+    title : Var vs Let vs Const,
+     image : /assets/images/blog/0-intro.png,
+     introduction: "Javascript has 3 keywords to declare a variable, let, const and var. In this article we are going to talk about the similarities and the differences between these keywords.",
+     tags: [dev,javascript],
+     placeholder: "#D9C51B",
+     duration: 2 min,
+    date: 28 févr. 2022,
+     link:https://dev.to/karamkoujan/var-vs-let-vs-const-peg
  }
 
 ]
