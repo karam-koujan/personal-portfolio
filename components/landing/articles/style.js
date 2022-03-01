@@ -46,7 +46,7 @@ const ArticleImg = styled.div`
 const ArticleWrapper = styled.div`
 display:grid;
 grid-gap:5%;
-grid-template-columns :repeat(auto-fit,minmax(25%,200px));
+grid-template-columns :repeat(auto-fit,minmax(30%,200px));
 opacity:0;
 padding:1rem 0 4rem 0;
 transform:translateY(20%);
