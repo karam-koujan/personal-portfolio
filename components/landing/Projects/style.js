@@ -78,8 +78,8 @@ const Text = styled.p`
 
 const Wrapper = styled.div`
  display:grid;
- grid-gap:5%;
- grid-template-columns :repeat(auto-fit,minmax(25%,200px));
+ grid-gap:2%;
+ grid-template-columns :repeat(auto-fit,minmax(23%,200px));
  opacity:0;
  padding:4rem 0;
  transform:translateY(20%);
