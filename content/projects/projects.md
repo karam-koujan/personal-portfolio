@@ -27,9 +27,9 @@ projects : [{
     {
     title: ecommerce app,
     image: "/assets/images/ecommerce.jpg",
-    link:"https://ecommerce-766du20bt-karam-koujan.vercel.app/",
+    link: "https://ecommerce-766du20bt-karam-koujan.vercel.app/",
     text: "an ecommerce app built with Next.js and Stripe.js",
-    placeholder:"#F7444E",
+    placeholder: "#F7444E",
     techs : ["Next.js","React.js","Stripe.js"]
     }
     ]
