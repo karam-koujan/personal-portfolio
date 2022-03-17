@@ -23,5 +23,13 @@ projects : [{
     placeholder: "#191a1d",
     techs : ["MongoDb","Express","React.js","Styled-components","React-query"]
 
-    }]
+    },
+    {
+    title: ecommerce app,
+    image: "/assets/images/ecommerce.jpg",
+    link:"https://ecommerce-766du20bt-karam-koujan.vercel.app/",
+    placeholder:"#F7444E",
+    techs : ["Next.js","React.js","Stripe.js"]
+    }
+    ]
 ---
