@@ -12,7 +12,7 @@ const Introduction = ({data:{name,introduction}})=>{
             {introduction}
           </Text>
           <BtnWrapper>
-            <Btn tabIndex="0" href="https://drive.google.com/file/d/14CaWJIAojV7GYec9gQ1yMdX54OrenVQp/view?usp=sharing" target="https://drive.google.com/file/d/14CaWJIAojV7GYec9gQ1yMdX54OrenVQp/view?usp=sharing">
+            <Btn tabIndex="0" href="https://docs.google.com/document/d/1KVr1RVEndTo-YAUJNOWfa3bCNjYYdJke-_G4pobesIU/edit?usp=sharing" target="https://docs.google.com/document/d/1KVr1RVEndTo-YAUJNOWfa3bCNjYYdJke-_G4pobesIU/edit?usp=sharing">
               my resume
             </Btn>
           <Link href="/contact" >
