@@ -54,7 +54,7 @@ const OpenSource = ()=>{
        </Wrapper>
        {repos.length>6?(
        <Link href="https://github.com/karam-koujan?tab=repositories">
-       <RepoLink>
+       <RepoLink href="https://github.com/karam-koujan?tab=repositories">
         See More
        </RepoLink>
        </Link>
