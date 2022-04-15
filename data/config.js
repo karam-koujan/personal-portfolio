@@ -1,8 +1,8 @@
 module.exports =  {
-    title:"karam koujan | Full-stack Dev",
+    title:"karam koujan | Front-end Dev",
     logo:"",
     name:"karam koujan",
-    description:"My name is karam koujan from morocco , a full stack javascript web developer specialized in JamStack and Mern stack and passionate about computer science and machine learning , I love learning new technologies that help me improve my product's quality .",
+    description:"My name is karam koujan from morocco , a front end developer specialized in JamStack and Mern stack and passionate about computer science and machine learning , I love learning new technologies that help me improve my product's quality .",
     socialMedia : {
        twitter:"https://twitter.com/karamkaku",
        github: 'https://github.com/karam-koujan',
