@@ -8,7 +8,7 @@ export default function Home({about,projects:{projects},introduction,articles:{a
   
   return (
     <>
-    <SEO title="karam koujan | Full-stack Dev"/>
+    <SEO title="karam koujan | Front-end Dev"/>
      <Layout data={navigation}>
      <Introduction data={introduction} />
      <About data={about}/>
